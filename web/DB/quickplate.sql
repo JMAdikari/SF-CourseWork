@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2024 at 06:54 AM
+-- Generation Time: Sep 10, 2024 at 11:08 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -50,21 +50,6 @@ CREATE TABLE `checkout` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customer table`
---
-
-CREATE TABLE `customer table` (
-  `customer ID` int(50) NOT NULL,
-  `customer name` varchar(50) NOT NULL,
-  `password` int(50) NOT NULL,
-  `address` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `orders` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `menu`
 --
 
@@ -98,6 +83,28 @@ CREATE TABLE `rider` (
   `rider_name` varchar(50) NOT NULL,
   `vehicle_type` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `userID` int(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `orders` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`userID`, `username`, `password`, `address`, `email`, `orders`) VALUES
+(0, 'jayaniadikari', '$2y$10$Y6oqGIMj3JBC25VjTvQo3O4HFNJi7wAz4ix0xLOYnXls7mbxXweTO', '385-A/4, new road', 'jayaniadikari19@gmail.com', '');
 
 --
 -- Indexes for dumped tables
