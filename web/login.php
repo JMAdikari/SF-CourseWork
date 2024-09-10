@@ -53,7 +53,7 @@
             <li><a href="TrackOrder.html">Track Order</a></li>
             <li><a href="cart.html">My cart</a></li>
             
-            <li><a href="login.html">My Acoount</a></li>
+            <li><a href="myacc.html">My Acoount</a></li>
             <li><a id="login" href="login.php">Login</a></li>
             
         </ul>
@@ -91,8 +91,8 @@
     <form action="login.php" method="post">
         <h3>Login</h3>
         <div class="inputBox">
-            <span>Username</span>
-            <input type="text" placeholder="Enter your username">
+            <span>Email</span>
+            <input type="text" placeholder="Enter your email">
         </div>
         <div class="inputBox">
             <span>Password</span>
