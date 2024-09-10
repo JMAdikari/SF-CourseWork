@@ -55,7 +55,7 @@ body.active {
 
 section {
     padding: 2rem 7%;
-    margin-top: 100rem; /* Added space below header */
+    margin-top: 10rem; /* Added space below header */
  
 }
 
@@ -290,4 +290,98 @@ section {
     .contact form .inputBox input {
         width: 100%;
     }
+}
+
+
+
+/* signup form */
+/* Container for the signup form */
+.container {
+    max-width: 40rem;
+    margin: 10rem auto 7rem auto; /* Center the form and add top and bottom margins */
+    padding: 2rem;
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+/* Form elements */
+.container form {
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+    margin-bottom: 1.5rem;
+}
+
+/* Form group styling */
+.container .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.container .form-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+/* Submit button */
+.container .btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--orange);
+    color: #f5f2f2;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.container .btn-primary:hover {
+    background: var(--bg-color-2);
+    color: var(--text-color-1);
+}
+
+/* Link for login */
+.container p {
+    font-size: 1.4rem;
+    color: var(--text-color-2);
+    margin-top: 1rem;
+}
+
+.container p a {
+    color: var(--orange);
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+/* Alert messages */
+.alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
 }

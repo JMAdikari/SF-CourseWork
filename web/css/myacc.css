@@ -54,8 +54,8 @@ body.active {
 }
 
 section {
-    padding: 2rem 7%;
-    margin-top: 100rem; /* Added space below header */
+    padding: 1rem 7%;
+    margin-top: 1rem; /* Added space below header */
  
 }
 
@@ -290,4 +290,65 @@ section {
     .contact form .inputBox input {
         width: 100%;
     }
+}
+
+
+
+/* My Account Section */
+.my-account {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile, .order-history, .account-settings {
+    margin-bottom: 2rem;
+}
+
+.profile p, .account-settings p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #ff6f00;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    background-color: #f7832a;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f17a2b;
+}
+
+.btn-danger {
+    background-color: #de6f1a;
+}
+
+.btn-danger:hover {
+    background-color: #ed7c26;
 }

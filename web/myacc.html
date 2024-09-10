@@ -31,7 +31,7 @@
     </form>
 
     <div class="icons">
-        <a href="login.html"> 
+        <a href="login.php"> 
             <div class="fas fa-user" id="login-btn"></div>
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
@@ -39,6 +39,9 @@
         <div class="fas fa-search" id="search-btn"></div>
         <a href="cart.html"> 
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </a>
+        <a href="logout.php"> <!-- Link to the logout script -->
+            <div class="fas fa-sign-out-alt" id="logout-btn"></div> <!-- Add logout icon -->
         </a>
      
         
@@ -54,7 +57,8 @@
             <li><a href="cart.html">My cart</a></li>
             
             <li><a href="login.html">My Acoount</a></li>
-            <li><a id="login" href="login.html">Login</a></li>
+            <li><a id="login" href="login.php">Login</a></li>
+            
             
         </ul>
         </nav>
@@ -63,7 +67,58 @@
 </header>
 
 
+ <!-- My Account Section -->
+ <section class="my-account">
+    <div class="container">
+        <h2>My Account</h2>
+        
+        <!-- User Profile Information -->
+        <div class="profile">
+            <h3>Profile Information</h3>
+            <p><strong>Username:</strong> JohnDoe123</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Address:</strong> 123 Main Street, Springfield</p>
+            <button class="btn">Edit Profile</button>
+        </div>
 
+        <!-- Order History -->
+        <div class="order-history">
+            <h3>Order History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001234</td>
+                        <td>09/10/2024</td>
+                        <td>Delivered</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>#001235</td>
+                        <td>09/05/2024</td>
+                        <td>In Progress</td>
+                        <td>$18.50</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn">View All Orders</button>
+        </div>
+
+        <!-- Account Settings -->
+        <div class="account-settings">
+            <h3>Account Settings</h3>
+            <button class="btn">Change Password</button>
+            <button class="btn btn-danger">Delete Account</button>
+        </div>
+    </div>
+</section>
 
 
 

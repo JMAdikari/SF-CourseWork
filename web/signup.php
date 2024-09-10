@@ -31,7 +31,7 @@
     </form>
 
     <div class="icons">
-        <a href="login.html"> 
+        <a href="login.php"> 
             <div class="fas fa-user" id="login-btn"></div>
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
@@ -54,7 +54,7 @@
             <li><a href="cart.html">My cart</a></li>
             
             <li><a href="login.html">My Acoount</a></li>
-            <li><a id="login" href="login.html">Login</a></li>
+            <li><a id="login" href="login.php">Login</a></li>
             
         </ul>
         </nav>
@@ -63,7 +63,90 @@
 </header>
 
 
+<div class="container">
+    
+    <?php
+        if (isset($_POST["submit"])) {
+           $fullName = $_POST["username"];
+           $email = $_POST["email"];
+           $password = $_POST["password"];
+           $address = $_POST["address"];
+           $passwordRepeat = $_POST["repeat_password"];
+           
+           
 
+           $errors = array();
+           
+           if (empty($fullName) OR empty($email) OR empty($password) OR empty($passwordRepeat) OR empty($address) ) {
+            array_push($errors,"All fields are required");
+           }
+           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            array_push($errors, "Email is not valid");
+           }
+           if (strlen($password)<8) {
+            array_push($errors,"Password must be at least 8 charactes long");
+           }
+           if ($password!==$passwordRepeat) {
+            array_push($errors,"Password does not match");
+           }
+           require_once "database.php";
+           $sql = "SELECT * FROM user WHERE email = '$email'";
+           $result = mysqli_query($conn, $sql);
+           $rowCount = mysqli_num_rows($result);
+           if ($rowCount>0) {
+            array_push($errors,"Email already exists!");
+           }
+           if (count($errors)>0) {
+            foreach ($errors as  $error) {
+                echo "<div class='alert alert-danger'>$error</div>";
+            }
+           }else{
+
+
+            
+            $sql = "INSERT INTO user (username, email, password,address) VALUES ( ?, ?, ?,? )";
+            $stmt = mysqli_stmt_init($conn);
+            $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
+            if ($prepareStmt) {
+                mysqli_stmt_bind_param($stmt,"ssss",$fullName, $email, $password , $address);
+                mysqli_stmt_execute($stmt);
+                echo "<div class='alert alert-success'>You are registered successfully.</div>";
+            }else{
+                die("Something went wrong");
+            }
+           }
+          
+
+        }
+        ?>
+
+    <form action="signup.php" method="post">
+        <h3>Sign Up</h3>
+        <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Full Name:">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email:">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password:">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
+        </div>
+
+        <div class="form-group">
+        <input type="text" class="form-control" name="address" placeholder="Address:">
+         </div>
+
+        <div class="form-btn">
+            <input type="submit" class="btn btn-primary" value="Register" name="submit">
+        </div>
+    </form>
+    <div>
+    <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
+  </div>
+</div>
 
 
 

@@ -31,7 +31,7 @@
     </form>
 
     <div class="icons">
-        <a href="login.html"> 
+        <a href="login.php"> 
             <div class="fas fa-user" id="login-btn"></div>
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
@@ -54,7 +54,7 @@
             <li><a href="cart.html">My cart</a></li>
             
             <li><a href="login.html">My Acoount</a></li>
-            <li><a id="login" href="login.html">Login</a></li>
+            <li><a id="login" href="login.php">Login</a></li>
             
         </ul>
         </nav>
@@ -66,7 +66,29 @@
 
 
 <div class="login-form-container">
-    <form action="">
+    <?php
+        if (isset($_POST["login"])) {
+           $email = $_POST["email"];
+           $password = $_POST["password"];
+            require_once "database.php";
+            $sql = "SELECT * FROM user WHERE email = '$email'";
+            $result = mysqli_query($conn, $sql);
+            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+            if ($user) {
+                if (password_verify($password, $user["password"])) {
+                    session_start();
+                    $_SESSION["user"] = "yes";
+                    header("Location:myacc.html");
+                    die();
+                }else{
+                    echo "<div class='alert alert-danger'>Password does not match</div>";
+                }
+            }else{
+                echo "<div class='alert alert-danger'>Email does not match</div>";
+            }
+        }
+        ?>
+    <form action="login.php" method="post">
         <h3>Login</h3>
         <div class="inputBox">
             <span>Username</span>
@@ -77,7 +99,7 @@
             <input type="password" placeholder="Enter your password">
         </div>
         <input type="submit" value="Login" class="btn">
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        <p>Don't have an account? <a href="signup.php">Sign up</a></p>
     </form>
 </div>
 
