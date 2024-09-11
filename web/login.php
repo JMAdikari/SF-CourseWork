@@ -67,38 +67,38 @@
 
 <div class="login-form-container">
     <?php
-        if (isset($_POST["login"])) {
-           $email = $_POST["email"];
-           $password = $_POST["password"];
-            require_once "database.php";
-            $sql = "SELECT * FROM user WHERE email = '$email'";
-            $result = mysqli_query($conn, $sql);
-            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-            if ($user) {
-                if (password_verify($password, $user["password"])) {
-                    session_start();
-                    $_SESSION["user"] = "yes";
-                    header("Location:myacc.html");
-                    die();
-                }else{
-                    echo "<div class='alert alert-danger'>Password does not match</div>";
-                }
-            }else{
-                echo "<div class='alert alert-danger'>Email does not match</div>";
-            }
-        }
+         if (isset($_POST["login"])) {
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+             require_once "database.php";
+             $sql = "SELECT * FROM user WHERE email = '$email'";
+             $result = mysqli_query($conn, $sql);
+             $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+             if ($user) {
+                 if (password_verify($password, $user["password"])) {
+                     session_start();
+                     $_SESSION["user"] = "yes";
+                     header("Location: myacc.html");
+                     die();
+                 }else{
+                     echo "<div class='alert alert-danger'>Password does not match</div>";
+                 }
+             }else{
+                 echo "<div class='alert alert-danger'>Email does not match</div>";
+             }
+         }
         ?>
     <form action="login.php" method="post">
         <h3>Login</h3>
         <div class="inputBox">
             <span>Email</span>
-            <input type="text" placeholder="Enter your email">
+            <input type="email" name="email" placeholder="Enter your email">
         </div>
         <div class="inputBox">
             <span>Password</span>
-            <input type="password" placeholder="Enter your password">
+            <input type="password" name="password" placeholder="Enter your password">
         </div>
-        <input type="submit" value="Login" class="btn">
+        <input type="submit" value="Login" name="login" class="btn">
         <p>Don't have an account? <a href="signup.php">Sign up</a></p>
     </form>
 </div>

@@ -73,7 +73,7 @@
            $address = $_POST["address"];
            $passwordRepeat = $_POST["repeat_password"];
            
-           
+           $passwordHash = password_hash($password, PASSWORD_BCRYPT);
 
            $errors = array();
            
@@ -108,7 +108,7 @@
             $stmt = mysqli_stmt_init($conn);
             $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
             if ($prepareStmt) {
-                mysqli_stmt_bind_param($stmt,"ssss",$fullName, $email, $password , $address);
+                mysqli_stmt_bind_param($stmt,"ssss",$fullName, $email, $passwordHash , $address);
                 mysqli_stmt_execute($stmt);
                 echo "<div class='alert alert-success'>You are registered successfully.</div>";
             }else{
