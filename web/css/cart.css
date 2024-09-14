@@ -55,7 +55,7 @@ body.active {
 
 section {
     padding: 2rem 7%;
-    margin-top: 100rem; /* Added space below header */
+    margin-top: 10rem; /* Added space below header */
  
 }
 
@@ -290,4 +290,130 @@ section {
     .contact form .inputBox input {
         width: 100%;
     }
+}
+
+
+.container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.shopping-cart {
+    background-color: var(--bg-color-1);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+
+.shopping-cart h1.heading {
+    font-size: 3rem;
+    color: var(--text-color-1);
+    margin-bottom: 2rem;
+}
+
+.shopping-cart table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--bg-color-1);
+}
+
+.shopping-cart table thead th {
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.shopping-cart table tbody tr {
+    border-bottom: 1px solid var(--bg-color-2);
+}
+
+.shopping-cart table tbody tr td {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+}
+
+.shopping-cart table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.shopping-cart table tbody tr td form input[type="number"] {
+    width: 60px;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--bg-color-2);
+    border-radius: 0.5rem;
+}
+
+.shopping-cart table tbody tr td form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.shopping-cart table tbody tr td form input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+.shopping-cart table .table-bottom td {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.option-btn, .delete-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.option-btn {
+    background-color: #ab6806;
+    color: white;
+}
+
+.option-btn:hover {
+    background-color: #915c05;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.checkout-btn {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.checkout-btn .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkout-btn .btn.disabled {
+    background-color: var(--bg-color-2);
+    cursor: not-allowed;
+}
+
+.checkout-btn .btn:hover:not(.disabled) {
+    background-color: #e67e22;
 }

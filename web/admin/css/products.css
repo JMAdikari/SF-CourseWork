@@ -1,0 +1,82 @@
+ /* General container styles */
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Section heading */
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0e0d0d; /* Updated heading color */
+}
+
+/* Table styling */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.product-table th, .product-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #ab6806; /* Updated header background color */
+    color: #fff; /* Updated header text color */
+}
+
+.product-table td {
+    background-color: #f9f9f9; /* Slightly off-white for table rows */
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Alternating row colors */
+}
+
+.product-table img {
+    width: 100px; /* Set a fixed width for images */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Button styling */
+.btn {
+    background-color: #ab6806; /* Updated button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #8a4b0b; /* Darker shade of the button color for hover effect */
+    transform: scale(1.05);
+}
+
+/* Message styling */
+.message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message .fa-times {
+    cursor: pointer;
+    color: #721c24;
+}

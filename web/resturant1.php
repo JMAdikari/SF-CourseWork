@@ -1,3 +1,29 @@
+<?php
+
+@include 'config.php';
+
+if(isset($_POST['add_to_cart'])){
+
+   $product_name = $_POST['product_name'];
+   $product_price = $_POST['product_price'];
+   $product_image = $_POST['product_image'];
+   $product_quantity = 1;
+
+   $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name'");
+
+   if(mysqli_num_rows($select_cart) > 0){
+      $message[] = 'product already added to cart';
+   }else{
+      $insert_product = mysqli_query($conn, "INSERT INTO `cart`(name, price, image, quantity) VALUES('$product_name', '$product_price', '$product_image', '$product_quantity')");
+      $message[] = 'product added to cart succesfully';
+   }
+
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +39,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- custom css file cdn link  -->
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/resturant1.css">
 
 </head>
 <body>
@@ -37,9 +63,15 @@
         <div class="fas fa-bars" id="menu-btn"></div>
         
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="cart.html"> 
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        </a>
+        <a href="cart.php">
+   <div class="fas fa-shopping-cart" id="cart-btn">
+      <?php
+      $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+      $row_count = mysqli_num_rows($select_rows);
+      ?>
+      <span><?php echo $row_count; ?></span>
+   </div>
+</a>
      
         
     </div>
@@ -53,7 +85,7 @@
             <li><a href="TrackOrder.html">Track Order</a></li>
             <li><a href="cart.html">My cart</a></li>
             
-            <li><a href="login.html">My Acoount</a></li>
+            <li><a href="login.php">My Acoount</a></li>
             <li><a id="login" href="login.php">Login</a></li>
             
         </ul>
@@ -61,6 +93,77 @@
 
      
 </header>
+
+
+<section class="home" id="home">
+
+    <div class="image" data-aos="fade-down">
+        <img src = "images/resturant1.jpg" alt="">
+    </div>
+
+    <div class="content" data-aos="fade-up">
+        <h3> Flavor Haven Resturant</h3>
+        <p>At Flavor Haven, we believe that every meal should be an unforgettable journey for your taste buds. Our carefully crafted dishes are made from the finest ingredients, creating a symphony of flavors that transport you to a world of culinary bliss. Join us and discover a haven where every bite is a celebration of taste and every visit is a cherished memory.</p>
+        <a href="resturants.html" class="btn">More Resturants..</a>
+    </div>
+
+</section>
+
+
+
+
+   
+<?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '<div class="message"><span>'.$message.'</span> <i class="fas fa-times" onclick="this.parentElement.style.display = `none`;"></i> </div>';
+   };
+};
+
+?>
+
+<div class="container">
+
+<section class="products">
+
+   <h1 class="heading">Our Resturant Latest Products</h1>
+
+   <div class="box-container">
+
+      <?php
+      
+      $select_products = mysqli_query($conn, "SELECT * FROM `products`");
+      if(mysqli_num_rows($select_products) > 0){
+         while($fetch_product = mysqli_fetch_assoc($select_products)){
+      ?>
+
+      <form action="" method="post">
+         <div class="box">
+            <img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
+            <h3><?php echo $fetch_product['name']; ?></h3>
+            <div class="price">$<?php echo $fetch_product['price']; ?>/-</div>
+            <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
+            <input type="hidden" name="product_price" value="<?php echo $fetch_product['price']; ?>">
+            <input type="hidden" name="product_image" value="<?php echo $fetch_product['image']; ?>">
+            <input type="submit" class="btn" value="add to cart" name="add_to_cart">
+         </div>
+      </form>
+
+      <?php
+         };
+      };
+      ?>
+
+   </div>
+
+</section>
+
+</div>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 
 
 
