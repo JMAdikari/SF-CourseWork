@@ -109,6 +109,49 @@ if(isset($_POST['add_to_cart'])){
 
 </section>
 
+<!-- Featured Section with Inline CSS -->
+<section style="padding: 40px; text-align: center;">
+    <h2 style="font-size: 36px; margin-bottom: 20px;"> Flavor Haven Our Meals</h2>
+    <div style="display: flex; justify-content: space-around;">
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
+            <img src="https://wallpaperaccess.com/full/767042.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Grilled Chicken</h3>
+            <p>"A classic Caesar salad topped with juicy grilled chicken, crunchy croutons, and Parmesan cheese."</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$12.99</p>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
+            <img src="https://wallpapercave.com/wp/wp3376127.jpg" alt="Veggie Delight" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Margherita Pizza</h3>
+            <p>A simple yet delicious pizza topped with fresh mozzarella, basil, and a drizzle of olive oil.</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$10.99</p>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
+            <img src="https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2015/03/04/Interactivity/Images/iStock_000050497740_Full.jpg?t=20170517" alt="Steak Sandwich" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Vegan Buddha Bowl</h3>
+            <p>A nutritious blend of quinoa, roasted vegetables, avocado, and a tangy tahini dressing.</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$14.99</p>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
+            <img src="https://wallpaperaccess.com/full/767042.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Grilled Chicken</h3>
+            <p>"A classic Caesar salad topped with juicy grilled chicken, crunchy croutons, and Parmesan cheese."</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$12.99</p>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
+            <img src="https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2015/03/04/Interactivity/Images/iStock_000050497740_Full.jpg?t=20170517" alt="Steak Sandwich" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Vegan Buddha Bowl</h3>
+            <p>A nutritious blend of quinoa, roasted vegetables, avocado, and a tangy tahini dressing.</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$14.99</p>
+        </div>
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
+            <img src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg" alt="Steak Sandwich" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Vegan Buddha Bowl</h3>
+            <p>A nutritious blend of quinoa, roasted vegetables, avocado, and a tangy tahini dressing.</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$14.99</p>
+        </div>
+    </div>
+</section>
+
 
 
 
