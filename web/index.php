@@ -262,7 +262,7 @@
                 <li>food and drinks</li>
                 
             </ul>
-            <a href="index.html" class="btn">choose plan</a>
+            <a href="index.php" class="btn">choose plan</a>
         </div>
 
         <div class="box" data-aos="zoom-in-up">
@@ -277,7 +277,7 @@
                 <li>food and drinks</li>
                 
             </ul>
-            <a href="index.html" class="btn">choose plan</a>
+            <a href="index.php" class="btn">choose plan</a>
         </div>
 
         <div class="box" data-aos="zoom-in-up">
@@ -293,7 +293,7 @@
                
                 
             </ul>
-            <a href="index.html" class="btn">choose plan</a>
+            <a href="index.php" class="btn">choose plan</a>
         </div>
 
     </div>
@@ -420,7 +420,7 @@
             </div>
             <div class="content">
                 <h3>What is bombay and hyderabadi biryani?</h3>
-                <a href="#" class="btn">read more</a>
+                <a href="https://natashaskitchen.com/" class="btn">read more</a>
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
@@ -434,7 +434,7 @@
             </div>
             <div class="content">
                 <h3>How many types of burger are there?</h3>
-                <a href="#" class="btn">read more</a>
+                <a href="https://createmycookbook.com/home_family_alt?msclkid=83d58ca11fc515a40f05ea5d57948db5&utm_source=bing&utm_medium=cpc&utm_campaign=New%20CMC&utm_term=%2Bfamily%20%2Brecipe%20%2Bcookbook&utm_content=Family%20Cookbook" class="btn">read more</a>
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
@@ -448,7 +448,7 @@
             </div>
             <div class="content">
                 <h3>Did you know some facts about pizza?</h3>
-                <a href="#" class="btn">read more</a>
+                <a href="https://smittenkitchen.com/" class="btn">read more</a>
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
