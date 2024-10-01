@@ -78,14 +78,11 @@ if(isset($_POST['add_to_cart'])){
 
     <nav class="navbar">
         <ul>
-            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a class="active" href="../index.php">Home</a></li>
             <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="MenuCategories.html">Menu Categories</a></li>
-            <li><a href="TrackOrder.html">Track Order</a></li>
+            <li><a href="rest1menu.php">Menu Categories</a></li>
             <li><a href="cart.html">My cart</a></li>
-            
-            <li><a href="login.html">My Acoount</a></li>
-            <li><a id="login" href="login.php">Login</a></li> 
+            <li><a id="login" href="../admin/login.php">Login</a></li> 
         </ul>
     </nav>
 </header>
@@ -205,7 +202,7 @@ if(isset($_POST['add_to_cart'])){
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Classic Cheese Burger.jpg" alt="Classic Cheese Burger">
+                <img src="https://www.certifiedirishangus.ie/wp-content/uploads/2019/11/TheUltimateBurgerwBacon_RecipePic-1200x675.jpg" alt="Classic Cheese Burger">
                 <h3>Classic Cheese Burger</h3>
                 <div class="price">$8.99</div>
                 <input type="hidden" name="product_name" value="Classic Cheese Burger">
@@ -227,7 +224,7 @@ if(isset($_POST['add_to_cart'])){
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Grilled Chicken Sandwich.jpg" alt="Grilled Chicken Sandwich">
+                <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Grilled-Chicken-Sandwich-750x750.jpg" alt="Grilled Chicken Sandwich">
                 <h3>Grilled Chicken Sandwich</h3>
                 <div class="price">$8.99</div>
                 <input type="hidden" name="product_name" value="Grilled Chicken Sandwich">

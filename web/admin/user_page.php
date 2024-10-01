@@ -26,6 +26,7 @@ if(!isset($user_id)){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/user.css">
 
 </head>
 <body>
@@ -47,11 +48,54 @@ if(!isset($user_id)){
       <a href="logout.php" class="delete-btn">Logout</a>
       <div class="flex-btn">
          <a href="login.php" class="option-btn">Login</a>
-         <a href="register.php" class="option-btn">Register</a>
+         <a href="../index.html" class="option-btn"> Home</a>
       </div>
    </div>
 
 </section>
+
+<!-- My Account Section -->
+<section class="my-account">
+    <div class="container">
+        
+        
+        
+
+        <!-- Order History -->
+        <div class="order-history">
+            <h3>Order History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001234</td>
+                        <td>09/10/2024</td>
+                        <td>Delivered</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>#001235</td>
+                        <td>09/05/2024</td>
+                        <td>In Progress</td>
+                        <td>$18.50</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn">Track All Orders</button>
+        </div>
+
+        
+    </div>
+</section>
+
+
 
 </body>
 </html>

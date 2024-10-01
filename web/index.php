@@ -1,3 +1,13 @@
+<?php
+
+@include 'config.php';
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,9 +47,15 @@
         <div class="fas fa-bars" id="menu-btn"></div>
         
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="cart.php"> 
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        </a>
+        <a href="cart.php">
+        <div class="fas fa-shopping-cart" id="cart-btn">
+      <?php
+      $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+      $row_count = mysqli_num_rows($select_rows);
+      ?>
+      <span><?php echo $row_count; ?></span>
+       </div>
+         </a>
      
         
     </div>
@@ -47,13 +63,10 @@
     <nav class="navbar">
         
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
             <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="rest1menu.html">Menu Categories</a></li>
-            <li><a href="TrackOrder.html">Track Order</a></li>
+            <li><a href="rest1menu.php">Menu Categories</a></li>
             <li><a href="cart.php">My cart</a></li>
-            
-            <li><a href="admin/login.php">My Acoount</a></li>
             <li><a id="login" href="admin/login.php">Login</a></li>
             
             
@@ -99,37 +112,37 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/pizza.jpg" alt="">
+                <img src="https://cdn.tasteatlas.com/images/dishes/b05a0af72ad845f3a6abe16143d7853a.jpg?mw=2000" alt="">
                 <h3> <i class="fas fa-utensils"></i> Pizza </h3>
             </div>
             <div class="content">
                 <div class="price"> 700.Rs <span>1000.Rs</span> </div>
                 <p>A classic Italian pizza with a crispy thin crust, topped with fresh mozzarella cheese, ripe tomatoes, and fragrant basil, drizzled with olive oil for the perfect blend of flavors.</p>
-                <a href="res2/MenuCategories.html" class="btn"> Order now</a>
+                <a href="resturant1.php" class="btn"> Order now</a>
             </div>
         </div>
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/bbq.jpg" alt="">
+                <img src="https://www.certifiedirishangus.ie/wp-content/uploads/2019/11/TheUltimateBurgerwBacon_RecipePic-1200x675.jpg" alt="">
                 <h3> <i class="fas fa-utensils"></i>  Classic Beef Burger </h3>
             </div>
             <div class="content">
                 <div class="price"> 800.Rs <span>1200.Rs</span> </div>
                 <p>  A juicy beef patty grilled to perfection, topped with fresh lettuce, ripe tomatoes, onions, and a slice of melted cheese, all nestled in a toasted sesame seed bun. Served with a side of crispy fries and ketchup.</p>
-                <a href="MenuCategories.html" class="btn"> Order now</a>
+                <a href="res2/MenuCategories.php" class="btn"> Order now</a>
             </div>
         </div>
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/salad.jpg" alt="">
+                <img src="https://www.wikihow.com/images/e/e0/Make-a-Healthy-Salad-that-Tastes-Good-Intro.jpg" alt="">
                 <h3> <i class="fas fa-utensils"></i> Garden Fresh Salad </h3>
             </div>
             <div class="content">
                 <div class="price"> 500.Rs<span>700.Rs</span> </div>
                 <p> A vibrant mix of crisp lettuce, cucumbers, cherry tomatoes, and crunchy croutons, tossed in a light vinaigrette. Topped with shredded carrots and a sprinkle of Parmesan cheese for a refreshing, healthy option.</p>
-                <a href="MenuCategories.html" class="btn"> Order now</a>
+                <a href="resturant4.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -141,7 +154,7 @@
             <div class="content">
                 <div class="price"> 650.Rs <span>750.Rs</span> </div>
                 <p> Aromatic basmati rice served with tender chicken cooked in a rich, flavorful curry sauce made with a blend of traditional spices, coconut milk, and herbs. Accompanied by a side of pickles and papadam.</p>
-                <a href="MenuCategories.html" class="btn"> Order now</a>
+                <a href="res2/MenuCategories.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -209,22 +222,22 @@
     <h2 style="font-size: 36px; margin-bottom: 20px;">Popular Meals</h2>
     <div style="display: flex; justify-content: space-around;">
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
-            <img src="https://wallpaperaccess.com/full/767042.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-            <h3 style="margin: 10px 0;">Grilled Chicken</h3>
+            <img src="https://www.pepperdelight.com/wp-content/uploads/2016/01/ChickenPasta1.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Chicken Pasta with White Sauce</h3>
             <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$12.99</p>
             <a href="resturant1.php" class="btn"> Order now</a>
         </div>
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
-            <img src="https://wallpaperaccess.com/full/767042.jpg" alt="Veggie Delight" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-            <h3 style="margin: 10px 0;">Veggie Delight</h3>
+            <img src="https://img.lovepik.com/photo/50077/4812.jpg_wh860.jpg" alt="Veggie Delight" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Seafood Pizza</h3>
             <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$10.99</p>
-            <a href="resturant1.php" class="btn"> Order now</a>
+            <a href="resturant4.php" class="btn"> Order now</a>
         </div>
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
-            <img src="https://wallpaperaccess.com/full/767042.jpg" alt="Steak Sandwich" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-            <h3 style="margin: 10px 0;">Steak Sandwich</h3>
+            <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Grilled-Chicken-Sandwich-750x750.jpg" alt="Steak Sandwich" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Grilled Chicken Sandwich</h3>
             <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$14.99</p>
-            <a href="resturant1.php" class="btn"> Order now</a>
+            <a href="res2/MenuCategories.php" class="btn"> Order now</a>
         </div>
     </div>
 </section>

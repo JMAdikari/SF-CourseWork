@@ -57,7 +57,7 @@ if(isset($_POST['add_to_cart'])){
     </form>
 
     <div class="icons">
-        <a href="login.php"> 
+        <a href="admin/login.php"> 
             <div class="fas fa-user" id="login-btn"></div>
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
@@ -81,12 +81,9 @@ if(isset($_POST['add_to_cart'])){
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="MenuCategories.html">Menu Categories</a></li>
-            <li><a href="TrackOrder.html">Track Order</a></li>
-            <li><a href="cart.html">My cart</a></li>
-            
-            <li><a href="login.php">My Acoount</a></li>
-            <li><a id="login" href="login.php">Login</a></li>
+            <li><a href="resturant1.php">Menu Categories</a></li>
+            <li><a href="cart.php">My cart</a></li>
+            <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
         </nav>

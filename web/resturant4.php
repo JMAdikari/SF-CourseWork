@@ -80,13 +80,10 @@ if(isset($_POST['add_to_cart'])){
     <nav class="navbar">
         
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="rest1menu.html">Menu Categories</a></li>
-            <li><a href="TrackOrder.html">Track Order</a></li>
-            <li><a href="cart.html">My cart</a></li>
-            
-            <li><a href="login.php">My Acoount</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="rest1menu.php">Resturants</a></li>
+            <li><a href="rest1menu.php">Menu Categories</a></li>
+            <li><a href="cart.php">My cart</a></li>
             <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
@@ -224,11 +221,11 @@ if(isset($_POST['add_to_cart'])){
 
             <!-- Pasta Section -->
             <div class="menu-category" id="pasta">
-    <h2>Pasta</h2>
+    <h2>Salads</h2>
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Cheese Pasta.jpg" alt="Cheese Pasta">
+                <img src="https://www.wikihow.com/images/e/e0/Make-a-Healthy-Salad-that-Tastes-Good-Intro.jpg" alt="Cheese Pasta">
                 <h3>Cheese Pasta</h3>
                 <div class="price">$10.99</div>
                 <input type="hidden" name="product_name" value="Cheese Pasta">

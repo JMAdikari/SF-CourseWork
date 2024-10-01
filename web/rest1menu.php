@@ -1,3 +1,12 @@
+<?php
+
+@include 'config.php';
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +25,7 @@
     <!-- custom css file cdn link  -->
     
     <link rel="stylesheet" href="css/resmenu.css">
-    <title>QuickPlate - Menu Categories </title>
+    <title> Menu Categories </title>
 
 </head>
 <body>
@@ -39,10 +48,15 @@
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
         
-
-        <a href="cart.php"> 
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        </a>
+        <a href="cart.php">
+            <div class="fas fa-shopping-cart" id="cart-btn">
+          <?php
+          $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+          $row_count = mysqli_num_rows($select_rows);
+          ?>
+          <span><?php echo $row_count; ?></span>
+           </div>
+             </a>
      
         
     </div>
@@ -67,6 +81,11 @@
 
 <!-- header section ends -->
 
+<br>
+<br>
+<br>
+<h1 class="heading">Menu Categories</h1>
+
 <!-- offer section -->
 <section class="home" id="home">
     <div class="swiper home-slider">
@@ -76,7 +95,7 @@
                     <span>Our Special Offers</span>
                     <h3>Juicy Burger</h3>
                     <p>Sink your teeth into our mouthwatering burger, grilled to perfection and loaded with fresh toppings!</p>
-                    <a href="#" class="btn">Order Now</a>
+                    <a href="resturant4.php" class="btn">Order Now</a>
                 </div>
                 <div class="image">
                     <img src="images/resmenuimg/off7.jpg" alt="Spicy Noodles">
@@ -121,8 +140,9 @@
 <!-- popular dishes section  -->
 
 <section class="dishes" id="dishes">
-    
-    <h1 class="heading">popular dishes</h1>
+
+
+    <h2 class="heading">popular dishes</h2>
 
     <div class="menu-container">
         <div class="menu-card">
@@ -132,7 +152,7 @@
                 <p class="menu-description">Savor a juicy beef patty topped with crispy bacon, rich BBQ sauce, fresh lettuce, and ripe tomatoes on a toasted brioche bun.</p>
                 <p class="menu-price">Rs.1550.00</p>
                 <div class="menu-rating">★★★★☆</div>
-                <a href="#" class="btn">Order Now</a>
+                <a href="resturant4.php" class="btn">Order Now</a>
             </div>
         </div>
         <div class="menu-card">
@@ -142,7 +162,7 @@
                 <p class="menu-description">Indulge in al dente spaghetti tossed with succulent prawns, creamy cheese sauce, and a hint of garlic, topped with fresh herbs for a delicious finish.</p>
                 <p class="menu-price">Rs.2000.00</p>
                 <div class="menu-rating">★★★★☆</div>
-                <a href="#" class="btn">Order Now</a>
+                <a href="resturant1.php" class="btn">Order Now</a>
         
             </div>
         </div>
@@ -153,7 +173,7 @@
                 <p class="menu-description">Enjoy a flavorful blend of tender meatballs and seasoned fried rice, tossed with fresh vegetables and a hint of spices for a delightful, satisfying meal.</p>
                 <p class="menu-price">Rs.1250.00</p>
                 <div class="menu-rating">★★★★★</div>
-                <a href="#" class="btn">Order Now</a>
+                <a href="res2/MenuCategories.php" class="btn">Order Now</a>
             </div>
         </div>
         <div class="menu-card">
@@ -163,7 +183,7 @@
                 <p class="menu-description">Delight in this rich chocolate cake with a gooey, molten center. Served warm, it’s a decadent treat that flows with chocolatey goodness, perfect for any chocolate lover!</p>
                 <p class="menu-price">Rs.550.oo</p>
                 <div class="menu-rating">★★★★★</div>
-                <a href="#" class="btn">Order Now</a>
+                <a href="resturant1.php" class="btn">Order Now</a>
             </div>
         </div>
     </div>
@@ -182,7 +202,7 @@
                 <img src="images/resmenuimg/p3.jpg" alt="Food 1">
                 <div class="description">Delicious Pizza</div>
                 <div class="menu-rating">★★★★★</div>
-                <a href="#" class="btn">Order Now</a>
+                <a href="res2/MenuCategories.php" class="btn">Order Now</a>
                 
                 
             </div>
