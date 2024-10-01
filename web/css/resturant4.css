@@ -167,7 +167,7 @@ section {
     width: 25rem;
     transform: scale(0);
     transform-origin: top right;
-    padding-left: 2rem;/*bullets*/
+    padding-left: 4rem;/*bullets*/
 }
 
 .header .navbar.active {
@@ -192,7 +192,7 @@ section {
 /* Footer start here */
 .footer {
     background: var(--bg-color-1);
-    padding: 5rem 7%; /* Added padding for space inside the footer */
+    padding: 0rem 0%; /* Added padding for space inside the footer */
 }
 
 .footer .box-container {
@@ -354,5 +354,27 @@ button:hover {
     background-color: #e67e22;
 }
 
+.image {
+    position: relative; /* Ensure that the text can be positioned over the image */
+    width: 100%; /* Full width container */
+}
+
+.image img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the div */
+}
+
+.restaurant-name {
+    position: absolute; /* Position relative to the image container */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text exactly */
+    color: rgb(11, 11, 11); /* White text for contrast */
+    font-size: 80px; /* Adjust size based on preference */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 4px rgba(244, 247, 79, 0.7); /* Add shadow for better readability */
+    font-family: 'Arial', sans-serif; /* Choose a font you prefer */
+}
 
 

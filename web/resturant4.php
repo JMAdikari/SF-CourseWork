@@ -58,13 +58,13 @@ if(isset($_POST['add_to_cart'])){
     </form>
 
     <div class="icons">
-        <a href="login.php"> 
+        <a href="admin/login.php"> 
             <div class="fas fa-user" id="login-btn"></div>
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
         
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="../cart.php">
+        <a href="cart.php">
         <div class="fas fa-shopping-cart" id="cart-btn">
       <?php
       $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
@@ -82,18 +82,25 @@ if(isset($_POST['add_to_cart'])){
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="MenuCategories.html">Menu Categories</a></li>
+            <li><a href="rest1menu.html">Menu Categories</a></li>
             <li><a href="TrackOrder.html">Track Order</a></li>
             <li><a href="cart.html">My cart</a></li>
             
-            <li><a href="login.html">My Acoount</a></li>
-            <li><a id="login" href="login.php">Login</a></li>
+            <li><a href="login.php">My Acoount</a></li>
+            <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
         </nav>
 
      
 </header>
+
+
+<div class="image" data-aos="fade-down">
+        <img src = "images/res4.jpg" alt="">
+        <div class="restaurant-name">Café Indigo</div>
+    </div>
+
 
 
 
@@ -108,34 +115,34 @@ if(isset($_POST['add_to_cart'])){
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Seafood Pizza.jpg" alt="Seafood Pizza">
+                <img src="https://img.lovepik.com/photo/50077/4812.jpg_wh860.jpg" alt="Seafood Pizza">
                 <h3>Seafood Pizza</h3>
                 <div class="price">$12.99</div>
                 <input type="hidden" name="product_name" value="Seafood Pizza">
                 <input type="hidden" name="product_price" value="12.99">
-                <input type="hidden" name="product_image" value="images/Seafood Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://img.lovepik.com/photo/50077/4812.jpg_wh860.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Double Chicken & Cheese Pizza.jpg" alt="Double Chicken & Cheese Pizza">
+                <img src="https://www.bostonmagazine.com/wp-content/uploads/sites/2/2013/06/pizza-main.jpg" alt="Double Chicken & Cheese Pizza">
                 <h3>Double Chicken & Cheese Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="Double Chicken & Cheese Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/Double Chicken & Cheese Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://www.bostonmagazine.com/wp-content/uploads/sites/2/2013/06/pizza-main.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/BBQ Chicken Pizza.jpg" alt="BBQ Pizza">
+                <img src="https://www.epicuricloud.com/wp-content/uploads/2020/02/Homemade-Pizza-Crust-Sauce-close-up-front-scaled.jpg" alt="BBQ Pizza">
                 <h3>BBQ Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="BBQ Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/BBQ Chicken Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://www.epicuricloud.com/wp-content/uploads/2020/02/Homemade-Pizza-Crust-Sauce-close-up-front-scaled.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
@@ -146,18 +153,18 @@ if(isset($_POST['add_to_cart'])){
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="Devilled Chicken Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/Devilled Chicken Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://www.simplyrecipes.com/thmb/rLl58QZmVP4C3zSlpkKBo72EUws=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Tandoori Chicken.jpg" alt="Tandoori Chicken Pizza">
+                <img src="https://2.bp.blogspot.com/-xKZmaz86O8o/UxC9_-NJSnI/AAAAAAAAAcI/kU_TsyBSR80/s1600/pizza.jpg" alt="Tandoori Chicken Pizza">
                 <h3>Tandoori Chicken Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="Tandoori Chicken Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/Tandoori Chicken.jpg">
+                <input type="hidden" name="product_image" value="https://2.bp.blogspot.com/-xKZmaz86O8o/UxC9_-NJSnI/AAAAAAAAAcI/kU_TsyBSR80/s1600/pizza.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
