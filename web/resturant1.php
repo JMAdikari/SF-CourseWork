@@ -40,6 +40,7 @@ if(isset($_POST['add_to_cart'])){
 
     <!-- custom css file cdn link  -->
     <link rel="stylesheet" href="css/resturant1.css">
+    <title> Girl & The Goat Restaurant </title>
 
 </head>
 <body>
@@ -79,10 +80,11 @@ if(isset($_POST['add_to_cart'])){
     <nav class="navbar">
         
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="resturant1.php">Menu Categories</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="reslisting.php">Resturants</a></li>
+            <li><a href="rest1menu.php">Menu Categories</a></li>
             <li><a href="cart.php">My cart</a></li>
+            <li><a href="admin/login.php">My Acoount</a></li>
             <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
@@ -99,8 +101,8 @@ if(isset($_POST['add_to_cart'])){
     </div>
 
     <div class="content" data-aos="fade-up">
-        <h3> Flavor Haven Resturant</h3>
-        <p>At Flavor Haven, we believe that every meal should be an unforgettable journey for your taste buds. Our carefully crafted dishes are made from the finest ingredients, creating a symphony of flavors that transport you to a world of culinary bliss. Join us and discover a haven where every bite is a celebration of taste and every visit is a cherished memory.</p>
+        <h3> Girl & The Goat</h3>
+        <p>At Girl & The Goat, we believe that every meal should be an unforgettable journey for your taste buds. Our carefully crafted dishes are made from the finest ingredients, creating a symphony of flavors that transport you to a world of culinary bliss. Join us and discover a haven where every bite is a celebration of taste and every visit is a cherished memory.</p>
         <a href="resturants.html" class="btn">More Resturants..</a>
     </div>
 
@@ -108,7 +110,7 @@ if(isset($_POST['add_to_cart'])){
 
 <!-- Featured Section with Inline CSS -->
 <section style="padding: 40px; text-align: center;">
-    <h2 style="font-size: 36px; margin-bottom: 20px;"> Flavor Haven Our Meals</h2>
+    <h2 style="font-size: 36px; margin-bottom: 20px;"> Girl & The Goat Our Meals</h2>
     <div style="display: flex; justify-content: space-around;">
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
             <img src="https://wallpaperaccess.com/full/767042.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">

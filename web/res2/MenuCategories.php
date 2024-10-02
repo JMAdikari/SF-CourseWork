@@ -45,7 +45,7 @@ if(isset($_POST['add_to_cart'])){
     <!-- custom css file cdn link  -->
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>QuickPlate - Savory Street Resturant</title>
+    <title>Great British Resturant</title>
 </head>
 <body>
     
@@ -79,9 +79,10 @@ if(isset($_POST['add_to_cart'])){
     <nav class="navbar">
         <ul>
             <li><a class="active" href="../index.php">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="rest1menu.php">Menu Categories</a></li>
-            <li><a href="cart.html">My cart</a></li>
+            <li><a href="../reslisting.php">Resturants</a></li>
+            <li><a href="../rest1menu.php">Menu Categories</a></li>
+            <li><a href="../cart.php">My cart</a></li>
+            <li><a href="../admin/login.php">My Acoount</a></li>
             <li><a id="login" href="../admin/login.php">Login</a></li> 
         </ul>
     </nav>
@@ -112,7 +113,7 @@ if(isset($_POST['add_to_cart'])){
   
 
 <!-- Menu Page HTML Structure -->
-<h1> Savory Street Our Menu</h1>
+<h1> Great British  Our Menu</h1>
 <!-- menu section starts  -->
 <div id="menu">
 

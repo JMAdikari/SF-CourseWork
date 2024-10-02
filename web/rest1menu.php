@@ -64,14 +64,13 @@
     <nav class="navbar">
         
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="rest1menu.html">Menu Categories</a></li>
-            <li><a href="TrackOrder.html">Track Order</a></li>
-            <li><a href="cart.html">My cart</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="reslisting.php">Resturants</a></li>
+            <li><a href="rest1menu.php">Menu Categories</a></li>
+            <li><a href="cart.php">My cart</a></li>
             
-            <li><a href="login.php">My Acoount</a></li>
-            <li><a id="login" href="login.php">Login</a></li>
+            <li><a href="admin/login.php">My Acoount</a></li>
+            <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
         </nav>
@@ -150,7 +149,7 @@
             <div class="menu-content">
                 <h2 class="menu-title">Bacon BBQ Burger</h2>
                 <p class="menu-description">Savor a juicy beef patty topped with crispy bacon, rich BBQ sauce, fresh lettuce, and ripe tomatoes on a toasted brioche bun.</p>
-                <p class="menu-price">Rs.1550.00</p>
+                <p class="menu-price">40$</p>
                 <div class="menu-rating">★★★★☆</div>
                 <a href="resturant4.php" class="btn">Order Now</a>
             </div>
@@ -160,7 +159,7 @@
             <div class="menu-content">
                 <h2 class="menu-title">Cheesy Shrimp Spaghetti Delight</h2>
                 <p class="menu-description">Indulge in al dente spaghetti tossed with succulent prawns, creamy cheese sauce, and a hint of garlic, topped with fresh herbs for a delicious finish.</p>
-                <p class="menu-price">Rs.2000.00</p>
+                <p class="menu-price">30$</p>
                 <div class="menu-rating">★★★★☆</div>
                 <a href="resturant1.php" class="btn">Order Now</a>
         
@@ -171,7 +170,7 @@
             <div class="menu-content">
                 <h2 class="menu-title">Spiced Meatball Fried Rice</h2>
                 <p class="menu-description">Enjoy a flavorful blend of tender meatballs and seasoned fried rice, tossed with fresh vegetables and a hint of spices for a delightful, satisfying meal.</p>
-                <p class="menu-price">Rs.1250.00</p>
+                <p class="menu-price">30$</p>
                 <div class="menu-rating">★★★★★</div>
                 <a href="res2/MenuCategories.php" class="btn">Order Now</a>
             </div>
@@ -181,7 +180,7 @@
             <div class="menu-content">
                 <h2 class="menu-title">Molten Chocolate Lava Cake</h2>
                 <p class="menu-description">Delight in this rich chocolate cake with a gooey, molten center. Served warm, it’s a decadent treat that flows with chocolatey goodness, perfect for any chocolate lover!</p>
-                <p class="menu-price">Rs.550.oo</p>
+                <p class="menu-price">20$</p>
                 <div class="menu-rating">★★★★★</div>
                 <a href="resturant1.php" class="btn">Order Now</a>
             </div>

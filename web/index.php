@@ -24,6 +24,7 @@
 
     <!-- custom css file cdn link  -->
     <link rel="stylesheet" href="css/index.css">
+    <title> Home Page </title>
 
 </head>
 <body>
@@ -64,9 +65,10 @@
         
         <ul>
             <li><a class="active" href="index.php">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
+            <li><a href="reslisting.php">Resturants</a></li>
             <li><a href="rest1menu.php">Menu Categories</a></li>
             <li><a href="cart.php">My cart</a></li>
+            <li><a href="admin/login.php">My Acoount</a></li>
             <li><a id="login" href="admin/login.php">Login</a></li>
             
             
@@ -116,7 +118,7 @@
                 <h3> <i class="fas fa-utensils"></i> Pizza </h3>
             </div>
             <div class="content">
-                <div class="price"> 700.Rs <span>1000.Rs</span> </div>
+                <div class="price"> 70$ <span>60$</span> </div>
                 <p>A classic Italian pizza with a crispy thin crust, topped with fresh mozzarella cheese, ripe tomatoes, and fragrant basil, drizzled with olive oil for the perfect blend of flavors.</p>
                 <a href="resturant1.php" class="btn"> Order now</a>
             </div>
@@ -128,7 +130,7 @@
                 <h3> <i class="fas fa-utensils"></i>  Classic Beef Burger </h3>
             </div>
             <div class="content">
-                <div class="price"> 800.Rs <span>1200.Rs</span> </div>
+                <div class="price"> 80$ <span>70$</span> </div>
                 <p>  A juicy beef patty grilled to perfection, topped with fresh lettuce, ripe tomatoes, onions, and a slice of melted cheese, all nestled in a toasted sesame seed bun. Served with a side of crispy fries and ketchup.</p>
                 <a href="res2/MenuCategories.php" class="btn"> Order now</a>
             </div>
@@ -140,7 +142,7 @@
                 <h3> <i class="fas fa-utensils"></i> Garden Fresh Salad </h3>
             </div>
             <div class="content">
-                <div class="price"> 500.Rs<span>700.Rs</span> </div>
+                <div class="price"> 50$<span>45$</span> </div>
                 <p> A vibrant mix of crisp lettuce, cucumbers, cherry tomatoes, and crunchy croutons, tossed in a light vinaigrette. Topped with shredded carrots and a sprinkle of Parmesan cheese for a refreshing, healthy option.</p>
                 <a href="resturant4.php" class="btn"> Order now</a>
             </div>
@@ -152,7 +154,7 @@
                 <h3> <i class="fas fa-utensils"></i> Rice and Curry </h3>
             </div>
             <div class="content">
-                <div class="price"> 650.Rs <span>750.Rs</span> </div>
+                <div class="price"> 65$ <span>60$</span> </div>
                 <p> Aromatic basmati rice served with tender chicken cooked in a rich, flavorful curry sauce made with a blend of traditional spices, coconut milk, and herbs. Accompanied by a side of pickles and papadam.</p>
                 <a href="res2/MenuCategories.php" class="btn"> Order now</a>
             </div>
@@ -164,9 +166,9 @@
                 <h3> <i class="fas fa-utensils"></i>  Iced Lemonade </h3>
             </div>
             <div class="content">
-                <div class="price"> 300.Rs <span>350.Rs</span> </div>
+                <div class="price"> 30$ <span>20$</span> </div>
                 <p>  A refreshing drink made with freshly squeezed lemons, ice, and a touch of sweetness. Perfect for quenching your thirst on a hot day, served ice-cold with a slice of lemon.</p>
-                <a href="MenuCategories.html" class="btn"> Order now</a>
+                <a href="res2/MenuCategories.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -177,9 +179,9 @@
                 <h3> <i class="fas fa-utensils"></i>   Sushi Roll Platter </h3>
             </div>
             <div class="content">
-                <div class="price"> 340.Rs <span>400.Rs</span> </div>
+                <div class="price"> 30$ <span>20$</span> </div>
                 <p>  A variety of sushi rolls including fresh tuna, salmon, and avocado rolls, paired with pickled ginger, wasabi, and soy sauce. A perfect choice for sushi lovers looking for a fresh and light meal.</p>
-                <a href="MenuCategories.html" class="btn"> Order now</a>
+                <a href="resturant1.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -190,9 +192,9 @@
                 <h3> <i class="fas fa-utensils"></i>  BBQ </h3>
             </div>
             <div class="content">
-                <div class="price"> 900.Rs <span>1300.Rs</span> </div>
+                <div class="price"> 35$ <span>30$</span> </div>
                 <p>  Succulent chicken wings marinated in a smoky BBQ sauce, grilled to perfection for a sticky, flavorful bite. Served with a side of coleslaw and dipping sauce for the ultimate BBQ experience.</p>
-                <a href="MenuCategories.html" class="btn"> Order now</a>
+                <a href="rest1menu.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -206,7 +208,7 @@
             <div class="content">
                 <div class="price"> 290.99 <span>350.99</span> </div>
                 <p>  A creamy and mildly spiced curry made with marinated chicken simmered in a rich tomato and butter sauce. Served with fluffy basmati rice or warm naan bread.</p>
-                <a href="#" class="btn"> Order now</a>
+                <a href="resturant4.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -253,7 +255,7 @@
         <div class="box" data-aos="zoom-in-up">
             <h3> basic plan </h3>
             <div class="price">
-                <span>Rs</span>
+                <span>$</span>
                 <span class="amount">3000</span>
                 <span>/mo</span>
             </div>
@@ -268,7 +270,7 @@
         <div class="box" data-aos="zoom-in-up">
             <h3> standard plan </h3>
             <div class="price">
-                <span>Rs</span>
+                <span>$</span>
                 <span class="amount">5000</span>
                 <span>/mo</span>
             </div>
@@ -283,7 +285,7 @@
         <div class="box" data-aos="zoom-in-up">
             <h3> premium plan </h3>
             <div class="price">
-                <span>Rs</span>
+                <span>$</span>
                 <span class="amount">9000</span>
                 <span>/mo</span>
             </div>

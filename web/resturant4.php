@@ -41,6 +41,7 @@ if(isset($_POST['add_to_cart'])){
 
     <!-- custom css file cdn link  -->
     <link rel="stylesheet" href="css/resturant4.css">
+    <title> Salt & Sugar Restaurant </title>
 
 </head>
 <body>
@@ -84,6 +85,7 @@ if(isset($_POST['add_to_cart'])){
             <li><a href="rest1menu.php">Resturants</a></li>
             <li><a href="rest1menu.php">Menu Categories</a></li>
             <li><a href="cart.php">My cart</a></li>
+            <li><a href="admin/login.php">My Acoount</a></li>
             <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
@@ -95,7 +97,7 @@ if(isset($_POST['add_to_cart'])){
 
 <div class="image" data-aos="fade-down">
         <img src = "images/res4.jpg" alt="">
-        <div class="restaurant-name">Café Indigo</div>
+        <div class="restaurant-name">Salt & Sugar</div>
     </div>
 
 
