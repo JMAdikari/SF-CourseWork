@@ -172,7 +172,7 @@ body.active {
     width: 25rem;
     transform: scale(0);
     transform-origin: top right;
-    padding-left: 2rem;/*bullets*/
+    padding-left: 2rem;
 }
 
 .header .navbar.active {
@@ -210,6 +210,7 @@ body.active {
     font-size: 2.5rem;
     color: var(--text-color-1);
     padding: 1rem 0;
+    font-weight: bold;
 }
 
 .footer .box-container .box a {
@@ -472,7 +473,7 @@ h2 {
   transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
 }
 
-h3 {
+.popuph3 {
   margin: 1;
   padding: 10px; /* Add padding for a more spacious feel */
   border-radius: 15px; /* Rounded corners */
