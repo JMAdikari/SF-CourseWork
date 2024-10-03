@@ -97,39 +97,39 @@
           <div class="topic">What's On Your Mind?</div>
           <div class="category-buttons">
             <div class="category-button">
-              <img src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/eaters-collective-ddZYOtZUnBk-unsplash.jpg" alt="Rice" />
+              <img src="images/assets/eaters-collective-ddZYOtZUnBk-unsplash.jpg" alt="Rice" />
               <span>Rice</span>
             </div>
             <div class="category-button">
               <img
-                src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/seafood.jpg"
+                src="images/assets/seafood.jpg"
                 alt="Seafood"
               />
               <span>Seafood</span>
             </div>
             <div class="category-button">
               <img
-                src="/Users/dinurinijai/Desktop/restaurants listing 2/assets/allen-rad-OCHMcVOWRAU-unsplash.jpg"
+                src="images/assets/allen-rad-OCHMcVOWRAU-unsplash.jpg"
                 alt="Burgers"
               />
               <span>Burgers</span>
             </div>
             <div class="category-button">
               <img
-                src="/Users/dinurinijai/Desktop/restaurants listing 2/assets/pexels-enginakyurt-2347311.jpg"
+                src="images/assets/pexels-enginakyurt-2347311.jpg"
                 alt="Noodles"
               />
               <span>Noodles</span>
             </div>
             <div class="category-button">
               <img
-                src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/pizza.jpg"
+                src="images/assets/pizza.jpg"
                 alt="Pizza"
               />
               <span>Pizza</span>
             </div>
             <div class="category-button">
-              <img src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/images-25.jpeg" alt="BBQ" />
+              <img src="images/assets/images-25.jpeg" alt="BBQ" />
               <span>BBQ</span>
             </div>
           </div>
@@ -228,7 +228,7 @@
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Hela Rasa">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/pexels-cottonbro-5607882.jpg"
+                  src="images/assets/pexels-cottonbro-5607882.jpg"
                   alt="Hela Rasa"
                   class="restaurant-img"
                 />
@@ -246,7 +246,7 @@
               <!-- Restaurant 2 -->
               <div class="restaurant-card" data-name="Ceylon Taste">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/image-result-for-curry-leaf-restaurant-colombo-buf-1.jpeg"
+                  src="images/assets/image-result-for-curry-leaf-restaurant-colombo-buf-1.jpeg"
                   alt="Ceylon Taste"
                   class="restaurant-img"
                 />
@@ -264,7 +264,7 @@
               <!-- Restaurant 2 -->
               <div class="restaurant-card" data-name="Rice & Curry">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/sri1.jpeg"
+                  src="images/assets/sri1.jpeg"
                   alt="Ceylon Taste"
                   class="restaurant-img"
                 />
@@ -281,7 +281,7 @@
               <!-- Restaurant 3 -->
               <div class="restaurant-card" data-name="Curry Leaf">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/Sri-Lanka-6-scaled.jpg"
+                  src="images/assets/Sri-Lanka-6-scaled.jpg"
                   alt="Curry Leaf"
                   class="restaurant-img"
                 />
@@ -303,7 +303,7 @@
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Indian food corner">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/indian1.jpg"
+                  src="images/assets/indian1.jpg"
                   alt="Indian food corner"
                   class="restaurant-img"
                 />
@@ -320,7 +320,7 @@
               <!-- Restaurant 2 -->
               <div class="restaurant-card" data-name="Masala Majesty">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/indian4.jpg"
+                  src="images/assets/indian4.jpg"
                   alt="Masala Majesty"
                   class="restaurant-img"
                 />
@@ -336,7 +336,7 @@
               </div>
               <div class="restaurant-card" data-name="Indian Kitchen">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/rumman-amin-ltN0BZhlvxY-unsplash.jpg"
+                  src="images/assets/rumman-amin-ltN0BZhlvxY-unsplash.jpg"
                   alt="Indian Kitchen"
                   class="restaurant-img"
                 />
@@ -353,7 +353,7 @@
               <!-- Restaurant 3 -->
               <div class="restaurant-card" data-name="Nutmeg">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/pexels-cottonbro-5371919.jpg"
+                  src="images/assets/pexels-cottonbro-5371919.jpg"
                   alt="Nutmeg"
                   class="restaurant-img"
                 />
@@ -376,7 +376,7 @@
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Yun's Kitchen">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/chinese1.jpg"
+                  src="images/assets/chinese1.jpg"
                   alt="Yun's Kitchen"
                   class="restaurant-img"
                 />
@@ -393,7 +393,7 @@
               <!-- Restaurant 2 -->
               <div class="restaurant-card" data-name="Dragon Kitchen">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/chinese2.jpg"
+                  src="images/assets/chinese2.jpg"
                   alt="Dragon Kitchen"
                   class="restaurant-img"
                 />
@@ -411,7 +411,7 @@
               <!-- Restaurant 3 -->
               <div class="restaurant-card" data-name="Tasty china">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/chinese5.jpg"
+                  src="images/assets/chinese5.jpg"
                   alt="Tasty China"
                   class="restaurant-img"
                 />
@@ -427,7 +427,7 @@
               </div>
               <div class="restaurant-card" data-name="Hot pot">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/chinese4.jpg"
+                  src="images/assets/chinese4.jpg"
                   alt="Hot pot"
                   class="restaurant-img"
                 />
@@ -450,7 +450,7 @@
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Italian Bistro">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/italian1.jpg"
+                  src="images/assets/italian1.jpg"
                   alt="Italian Bistro"
                   class="restaurant-img"
                 />
@@ -467,7 +467,7 @@
               <!-- Restaurant 2 -->
               <div class="restaurant-card" data-name="Italian Bistro">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/italian.jpg"
+                  src="images/assets/italian.jpg"
                   alt="Pizza Fiesta"
                   class="restaurant-img"
                 />
@@ -484,7 +484,7 @@
               <!-- Restaurant 3 -->
               <div class="restaurant-card" data-name="Italian Corner">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/italian2.jpg"
+                  src="images/assets/italian2.jpg"
                   alt="Italian Corner"
                   class="restaurant-img"
                 />
@@ -506,7 +506,7 @@
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Cool Zone">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/cafe4.jpg"
+                  src="images/assets/cafe4.jpg"
                   alt="Cool Zone"
                   class="restaurant-img"
                 />
@@ -523,7 +523,7 @@
               <!-- Restaurant 2 -->
               <div class="restaurant-card" data-name="Drinks and bites">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/caf3.jpg"
+                  src="images/assets/caf3.jpg"
                   alt="Drinks and bites"
                   class="restaurant-img"
                 />
@@ -540,7 +540,7 @@
               <!-- Restaurant 3 -->
               <div class="restaurant-card" data-name="Viki's">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/cafe3.jpg"
+                  src="images/assets/cafe3.jpg"
                   alt="Viki's"
                   class="restaurant-img"
                 />
@@ -556,7 +556,7 @@
               </div>
               <div class="restaurant-card" data-name="cool Bar">
                 <img
-                  src="/Users/dinurinijai/Documents/GitHub/SF-CourseWork/web/images/assets/cafe2.jpg"
+                  src="images/assets/cafe2.jpg"
                   alt="Cool Bar"
                   class="restaurant-img"
                 />
