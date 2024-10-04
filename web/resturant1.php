@@ -103,7 +103,7 @@ if(isset($_POST['add_to_cart'])){
     <div class="content" data-aos="fade-up">
         <h3> Girl & The Goat</h3>
         <p>At Girl & The Goat, we believe that every meal should be an unforgettable journey for your taste buds. Our carefully crafted dishes are made from the finest ingredients, creating a symphony of flavors that transport you to a world of culinary bliss. Join us and discover a haven where every bite is a celebration of taste and every visit is a cherished memory.</p>
-        <a href="resturants.html" class="btn">More Resturants..</a>
+        <a href="reslisting.php" class="btn">More Resturants..</a>
     </div>
 
 </section>

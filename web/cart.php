@@ -82,9 +82,10 @@ if(isset($_GET['delete_all'])){
         
         <ul>
             <li><a class="active" href="index.php">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
+            <li><a href="reslisting.php">Resturants</a></li>
             <li><a href="rest1menu.php">Menu Categories</a></li>
             <li><a href="cart.php">My cart</a></li>
+            <li><a href="admin/login.php">My Acoount</a></li>
             <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>

@@ -141,56 +141,56 @@ if(isset($_POST['add_to_cart'])){
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Seafood Pizza.jpg" alt="Seafood Pizza">
+                <img src="https://recipesblob.oetker.in/assets/d8a4b00c292a43adbb9f96798e028f01/1272x764/pizza-pollo-arrostojpg.jpg" alt="Seafood Pizza">
                 <h3>Seafood Pizza</h3>
                 <div class="price">$12.99</div>
                 <input type="hidden" name="product_name" value="Seafood Pizza">
                 <input type="hidden" name="product_price" value="12.99">
-                <input type="hidden" name="product_image" value="images/Seafood Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://recipesblob.oetker.in/assets/d8a4b00c292a43adbb9f96798e028f01/1272x764/pizza-pollo-arrostojpg.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Double Chicken & Cheese Pizza.jpg" alt="Double Chicken & Cheese Pizza">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1EXyUNjrliNeMfxpuMoI_olyhT1t0rb5ICQ&s" alt="Double Chicken & Cheese Pizza">
                 <h3>Double Chicken & Cheese Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="Double Chicken & Cheese Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/Double Chicken & Cheese Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1EXyUNjrliNeMfxpuMoI_olyhT1t0rb5ICQ&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/BBQ Chicken Pizza.jpg" alt="BBQ Pizza">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdhSR2qXdCZsVWQ32vSlkWwInG1csQV7Iw&s" alt="BBQ Pizza">
                 <h3>BBQ Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="BBQ Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/BBQ Chicken Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzdhSR2qXdCZsVWQ32vSlkWwInG1csQV7Iw&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="https://www.simplyrecipes.com/thmb/rLl58QZmVP4C3zSlpkKBo72EUws=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg" alt="Devilled Chicken Pizza">
+                <img src="https://cookingwithcarbs.com/wp-content/uploads/2021/06/spicy-sausage-pizza-final8-min.jpg" alt="Devilled Chicken Pizza">
                 <h3>Devilled Chicken Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="Devilled Chicken Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/Devilled Chicken Pizza.jpg">
+                <input type="hidden" name="product_image" value="https://cookingwithcarbs.com/wp-content/uploads/2021/06/spicy-sausage-pizza-final8-min.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Tandoori Chicken.jpg" alt="Tandoori Chicken Pizza">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_N3IAlrGDX2LbETK6xSJk5Kk2aoc4xYruIg&s" alt="Tandoori Chicken Pizza">
                 <h3>Tandoori Chicken Pizza</h3>
                 <div class="price">$13.99</div>
                 <input type="hidden" name="product_name" value="Tandoori Chicken Pizza">
                 <input type="hidden" name="product_price" value="13.99">
-                <input type="hidden" name="product_image" value="images/Tandoori Chicken.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_N3IAlrGDX2LbETK6xSJk5Kk2aoc4xYruIg&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
@@ -208,18 +208,18 @@ if(isset($_POST['add_to_cart'])){
                 <div class="price">$8.99</div>
                 <input type="hidden" name="product_name" value="Classic Cheese Burger">
                 <input type="hidden" name="product_price" value="8.99">
-                <input type="hidden" name="product_image" value="images/Classic Cheese Burger.jpg">
+                <input type="hidden" name="product_image" value="https://www.certifiedirishangus.ie/wp-content/uploads/2019/11/TheUltimateBurgerwBacon_RecipePic-1200x675.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Club Sandwich.jpg" alt="Club Sandwich">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1IfTDN_3xF1ijjMh9V_mLhaxFuVyr2x6xw&s" alt="Club Sandwich">
                 <h3>Club Sandwich</h3>
                 <div class="price">$8.99</div>
                 <input type="hidden" name="product_name" value="Club Sandwich">
                 <input type="hidden" name="product_price" value="8.99">
-                <input type="hidden" name="product_image" value="images/Club Sandwich.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1IfTDN_3xF1ijjMh9V_mLhaxFuVyr2x6xw&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
@@ -230,18 +230,18 @@ if(isset($_POST['add_to_cart'])){
                 <div class="price">$8.99</div>
                 <input type="hidden" name="product_name" value="Grilled Chicken Sandwich">
                 <input type="hidden" name="product_price" value="8.99">
-                <input type="hidden" name="product_image" value="images/Grilled Chicken Sandwich.jpg">
+                <input type="hidden" name="product_image" value="https://www.licious.in/blog/wp-content/uploads/2020/12/Grilled-Chicken-Sandwich-750x750.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Chicken Burger.jpg" alt="Chicken Burger">
+                <img src="https://www.thecookierookie.com/wp-content/uploads/2021/09/bbq-burgers-recipe-6-650x845.jpg" alt="Chicken Burger">
                 <h3>Chicken Burger</h3>
                 <div class="price">$8.99</div>
                 <input type="hidden" name="product_name" value="Chicken Burger">
                 <input type="hidden" name="product_price" value="8.99">
-                <input type="hidden" name="product_image" value="images/Chicken Burger.jpg">
+                <input type="hidden" name="product_image" value="https://www.thecookierookie.com/wp-content/uploads/2021/09/bbq-burgers-recipe-6-650x845.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
@@ -254,34 +254,34 @@ if(isset($_POST['add_to_cart'])){
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Cheese Pasta.jpg" alt="Cheese Pasta">
+                <img src="https://i.ytimg.com/vi/NdyLWpTlnU4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLByvzsiqOkDQtipraJqmCyJCW2YKg" alt="Cheese Pasta">
                 <h3>Cheese Pasta</h3>
                 <div class="price">$10.99</div>
                 <input type="hidden" name="product_name" value="Cheese Pasta">
                 <input type="hidden" name="product_price" value="10.99">
-                <input type="hidden" name="product_image" value="images/Cheese Pasta.jpg">
+                <input type="hidden" name="product_image" value="https://i.ytimg.com/vi/NdyLWpTlnU4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLByvzsiqOkDQtipraJqmCyJCW2YKg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Lasagna.jpg" alt="Lasagna">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzsjXkw8qdig3EucYlEEnIyvxhFvE7eKDlA&s" alt="Lasagna">
                 <h3>Lasagna</h3>
                 <div class="price">$10.99</div>
                 <input type="hidden" name="product_name" value="Lasagna">
                 <input type="hidden" name="product_price" value="10.99">
-                <input type="hidden" name="product_image" value="images/Lasagna.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzsjXkw8qdig3EucYlEEnIyvxhFvE7eKDlA&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Chicken Pasta.jpg" alt="Chicken Pasta">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6KHezCmJsFBd72usobBy9ag35EbSC44jBg&s" alt="Chicken Pasta">
                 <h3>Chicken Pasta</h3>
                 <div class="price">$10.99</div>
                 <input type="hidden" name="product_name" value="Chicken Pasta">
                 <input type="hidden" name="product_price" value="10.99">
-                <input type="hidden" name="product_image" value="images/Chicken Pasta.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6KHezCmJsFBd72usobBy9ag35EbSC44jBg&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
@@ -295,67 +295,67 @@ if(isset($_POST['add_to_cart'])){
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Strawberry Banana Smoothie.jpg" alt="Strawberry Banana Smoothie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfrA6std0HcGmRQBx2MpTqC42jO0LBE0pwg&s" alt="Strawberry Banana Smoothie">
                 <h3>Strawberry Banana Smoothie</h3>
                 <div class="price">$5.99</div>
                 <input type="hidden" name="product_name" value="Strawberry Banana Smoothie">
                 <input type="hidden" name="product_price" value="5.99">
-                <input type="hidden" name="product_image" value="images/Strawberry Banana Smoothie.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfrA6std0HcGmRQBx2MpTqC42jO0LBE0pwg&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Cappuccino.jpg" alt="Cappuccino">
+                <img src="https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/cappuccino-2029-e80b7c6d318c7862df2c4c8623a11f99@1x.jpg" alt="Cappuccino">
                 <h3>Cappuccino</h3>
                 <div class="price">$5.99</div>
                 <input type="hidden" name="product_name" value="Cappuccino">
                 <input type="hidden" name="product_price" value="5.99">
-                <input type="hidden" name="product_image" value="images/Cappuccino.jpg">
+                <input type="hidden" name="product_image" value="https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/cappuccino-2029-e80b7c6d318c7862df2c4c8623a11f99@1x.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Oreo Milkshake.jpg" alt="Oreo Milkshake">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb896kUCBZgtlrovM_eJakZ1DbhWigQWxh7g&s" alt="Oreo Milkshake">
                 <h3>Oreo Milkshake</h3>
                 <div class="price">$5.99</div>
                 <input type="hidden" name="product_name" value="Oreo Milkshake">
                 <input type="hidden" name="product_price" value="5.99">
-                <input type="hidden" name="product_image" value="images/Oreo Milkshake.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb896kUCBZgtlrovM_eJakZ1DbhWigQWxh7g&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Chocolate Milkshake.jpg" alt="Chocolate Milkshake">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TFt4OggSK8D5xNS5KsJ9ZpCsd4JXFwR9JA&s" alt="Chocolate Milkshake">
                 <h3>Chocolate Milkshake</h3>
                 <div class="price">$5.99</div>
                 <input type="hidden" name="product_name" value="Chocolate Milkshake">
                 <input type="hidden" name="product_price" value="5.99">
-                <input type="hidden" name="product_image" value="images/Chocolate Milkshake.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TFt4OggSK8D5xNS5KsJ9ZpCsd4JXFwR9JA&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Strawberry Lemonade.jpg" alt="Strawberry Lemonade">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwDPX2ma17GgiTy7gkH7MeaJvPrS_ChgIFQ&s" alt="Strawberry Lemonade">
                 <h3>Strawberry Lemonade</h3>
                 <div class="price">$5.99</div>
                 <input type="hidden" name="product_name" value="Strawberry Lemonade">
                 <input type="hidden" name="product_price" value="5.99">
-                <input type="hidden" name="product_image" value="images/Strawberry Lemonade.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwDPX2ma17GgiTy7gkH7MeaJvPrS_ChgIFQ&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Sparkling Mint Limeade.jpg" alt="Sparkling Mint Limeade">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFQ9OzvK22KWgWUlsC92vS75ry6MaXwXKgg&s" alt="Sparkling Mint Limeade">
                 <h3>Sparkling Mint Limeade</h3>
                 <div class="price">$5.99</div>
                 <input type="hidden" name="product_name" value="Sparkling Mint Limeade">
                 <input type="hidden" name="product_price" value="5.99">
-                <input type="hidden" name="product_image" value="images/Sparkling Mint Limeade.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFQ9OzvK22KWgWUlsC92vS75ry6MaXwXKgg&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
@@ -368,45 +368,45 @@ if(isset($_POST['add_to_cart'])){
     <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Seafood Rice.jpg" alt="Seafood Rice">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfmWL3tkbxJvmCcMyy5GAdXc7vJF3CGbOCw&s" alt="Seafood Rice">
                 <h3>Seafood Rice</h3>
                 <div class="price">$11.99</div>
                 <input type="hidden" name="product_name" value="Seafood Rice">
                 <input type="hidden" name="product_price" value="11.99">
-                <input type="hidden" name="product_image" value="images/Seafood Rice.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfmWL3tkbxJvmCcMyy5GAdXc7vJF3CGbOCw&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Fish and Chips.jpg" alt="Fish and Chips">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBnTafa8O09UWCdV3hyoFF5jDBxLXqqy4Jg&s" alt="Fish and Chips">
                 <h3>Fish and Chips</h3>
                 <div class="price">$11.99</div>
                 <input type="hidden" name="product_name" value="Fish and Chips">
                 <input type="hidden" name="product_price" value="11.99">
-                <input type="hidden" name="product_image" value="images/Fish and Chips.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBnTafa8O09UWCdV3hyoFF5jDBxLXqqy4Jg&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Fish Tacos.jpg" alt="Fish Tacos">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyrNPYhhUB3UhsD2vpb5ePRpirDhjVUne2A&s" alt="Fish Tacos">
                 <h3>Fish Tacos</h3>
                 <div class="price">$11.99</div>
                 <input type="hidden" name="product_name" value="Fish Tacos">
                 <input type="hidden" name="product_price" value="11.99">
-                <input type="hidden" name="product_image" value="images/Fish Tacos.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyrNPYhhUB3UhsD2vpb5ePRpirDhjVUne2A&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
         <div class="menu-item">
             <form action="" method="post">
-                <img src="images/Shrimp Scampi.jpg" alt="Shrimp Scampi">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyrNPYhhUB3UhsD2vpb5ePRpirDhjVUne2A&s" alt="Shrimp Scampi">
                 <h3>Shrimp Scampi</h3>
                 <div class="price">$11.99</div>
                 <input type="hidden" name="product_name" value="Shrimp Scampi">
                 <input type="hidden" name="product_price" value="11.99">
-                <input type="hidden" name="product_image" value="images/Shrimp Scampi.jpg">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyrNPYhhUB3UhsD2vpb5ePRpirDhjVUne2A&s">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>

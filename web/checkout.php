@@ -45,7 +45,7 @@ if(isset($_POST['order_btn'])){
             <p> your payment mode : <span>".$method."</span> </p>
             <p>(*pay when product arrives*)</p>
          </div>
-            <a href='index.html' class='btn'>continue shopping</a>
+            <a href='index.php' class='btn'>continue shopping</a>
          </div>
       </div>
       ";
@@ -93,13 +93,13 @@ if(isset($_POST['order_btn'])){
     </form>
 
     <div class="icons">
-        <a href="login.php"> 
+        <a href="admin/login.php"> 
             <div class="fas fa-user" id="login-btn"></div>
         </a>
         <div class="fas fa-bars" id="menu-btn"></div>
         
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="cart.html"> 
+        <a href="cart.php"> 
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
         </a>
      
@@ -109,14 +109,13 @@ if(isset($_POST['order_btn'])){
     <nav class="navbar">
         
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="Resturants.html">Resturants</a></li>
-            <li><a href="MenuCategories.html">Menu Categories</a></li>
-            <li><a href="TrackOrder.html">Track Order</a></li>
-            <li><a href="cart.html">My cart</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="reslisting.php">Resturants</a></li>
+            <li><a href="rest1menu.php">Menu Categories</a></li>
+            <li><a href="cart.php">My cart</a></li>
             
-            <li><a href="login.html">My Acoount</a></li>
-            <li><a id="login" href="login.php">Login</a></li>
+            <li><a href="admin/login.php">My Acoount</a></li>
+            <li><a id="login" href="admin/login.php">Login</a></li>
             
         </ul>
         </nav>
