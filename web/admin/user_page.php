@@ -1,13 +1,17 @@
 <?php
 
-include 'config.php';
+// Include the config file
+include '../config.php';
 
+// Start the session
 session_start();
 
 $user_id = $_SESSION['user_id'];
 
+// Redirect to login page if user is not logged in
 if(!isset($user_id)){
    header('location:login.php');
+   exit(); // Always add exit() after header redirection
 }
 
 ?>
@@ -21,10 +25,10 @@ if(!isset($user_id)){
 
    <title>User Page</title>
 
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome CDN link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <!-- custom css file link  -->
+   <!-- Custom CSS file links -->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/user.css">
 
@@ -36,19 +40,24 @@ if(!isset($user_id)){
 <section class="profile-container">
 
    <?php
-      $select_profile = $conn->prepare("SELECT * FROM `user` WHERE userID = ?");
-      $select_profile->execute([$user_id]);
-      $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+      // Fetch user profile from the database
+      $select_profile = mysqli_query($conn, "SELECT * FROM `user` WHERE userID = '$user_id'") or die('query failed');
+      
+      if(mysqli_num_rows($select_profile) > 0){
+         $fetch_profile = mysqli_fetch_assoc($select_profile);
+      } else {
+         echo '<p>User not found!</p>';
+      }
    ?>
 
    <div class="profile">
-      <img src="uploaded_img/<?= $fetch_profile['image']; ?>" alt="">
+      <img src="uploaded_img/<?= $fetch_profile['image']; ?>" alt="Profile Image">
       <h3><?= $fetch_profile['username']; ?></h3>
       <a href="user_profile_update.php" class="btn">Update Profile</a>
       <a href="logout.php" class="delete-btn">Logout</a>
       <div class="flex-btn">
-         <a href="login.php" class="option-btn">Login</a>
-         <a href="../index.html" class="option-btn"> Home</a>
+         <a href="user_page.php" class="option-btn">My Orders</a>
+         <a href="../index.php" class="option-btn">Home</a>
       </div>
    </div>
 
@@ -57,10 +66,6 @@ if(!isset($user_id)){
 <!-- My Account Section -->
 <section class="my-account">
     <div class="container">
-        
-        
-        
-
         <!-- Order History -->
         <div class="order-history">
             <h3>Order History</h3>
@@ -90,12 +95,8 @@ if(!isset($user_id)){
             </table>
             <button class="btn">Track All Orders</button>
         </div>
-
-        
     </div>
 </section>
-
-
 
 </body>
 </html>

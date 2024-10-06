@@ -4,7 +4,7 @@
 
 <?php
 
-@include 'config2.php';
+@include '../config.php';
 
 ?>
 
@@ -57,7 +57,7 @@ if(isset($message)){
             while($fetch_product = mysqli_fetch_assoc($select_products)){
          ?>
          <tr>
-            <td><img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt=""></td>
+            <td><img src="<?php echo $fetch_product['image']; ?>" alt=""></td>
             <td><?php echo $fetch_product['name']; ?></td>
             <td>$<?php echo $fetch_product['price']; ?>/-</td>
                <form action="" method="post">

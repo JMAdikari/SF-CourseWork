@@ -1,6 +1,6 @@
 <?php
 
-@include 'config2.php';
+@include '../config.php';
 
 if(isset($_POST['add_product'])){
 
@@ -64,7 +64,7 @@ if(isset($message)){
          <input type="number" placeholder="Enter Product Price" name="product_price" class="box">
          <input type="text" placeholder="Enter Image URL" name="product_image" class="box"> <!-- Changed to text input for URL -->
          <input type="submit" class="btn" name="add_product" value="Add Product">
-         <a href="../index.html" class="btn">Back to Home</a>
+         <a href="../index.php" class="btn">Back to Home</a>
       </form>
 
    </div>

@@ -1,41 +1,41 @@
 <?php
 
-include 'config.php';
+// Include the config file
+include '../config.php';
 
 if(isset($_POST['submit'])){
 
-   $username = $_POST['username'];
-   $username = filter_var($username, FILTER_SANITIZE_STRING);
-   $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
-   $pass = md5($_POST['pass']);
-   $pass = filter_var($pass, FILTER_SANITIZE_STRING);
-   $cpass = md5($_POST['cpass']);
-   $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
-   $address = $_POST['address'];
-   $address = filter_var($address, FILTER_SANITIZE_STRING);
+   // Sanitize inputs
+   $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+   $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+   $pass = md5(filter_var($_POST['pass'], FILTER_SANITIZE_STRING));
+   $cpass = md5(filter_var($_POST['cpass'], FILTER_SANITIZE_STRING));
+   $address = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
 
+   // Handle the uploaded image
    $image = $_FILES['image']['name'];
    $image_tmp_name = $_FILES['image']['tmp_name'];
    $image_size = $_FILES['image']['size'];
    $image_folder = 'uploaded_img/'.$image;
 
-   $select = $conn->prepare("SELECT * FROM `user` WHERE email = ?");
-   $select->execute([$email]);
+   // Check if the user already exists
+   $select = mysqli_query($conn, "SELECT * FROM `user` WHERE email = '$email'") or die('query failed');
 
-   if($select->rowCount() > 0){
-      $message[] = 'user already exists!';
-   }else{
+   if(mysqli_num_rows($select) > 0){
+      $message[] = 'User already exists!';
+   } else {
       if($pass != $cpass){
-         $message[] = 'confirm password does not match!';
-      }elseif($image_size > 2000000){
-         $message[] = 'image size is too large!';
-      }else{
-         $insert = $conn->prepare("INSERT INTO `user`(username, email, password, address, image) VALUES(?,?,?,?,?)");
-         $insert->execute([$username, $email, $cpass, $address, $image]);
+         $message[] = 'Confirm password does not match!';
+      } elseif($image_size > 2000000){
+         $message[] = 'Image size is too large!';
+      } else {
+         // Insert user data
+         $insert = mysqli_query($conn, "INSERT INTO `user`(username, email, password, address, image) VALUES('$username', '$email', '$cpass', '$address', '$image')") or die('query failed');
+
          if($insert){
+            // Move uploaded image to folder
             move_uploaded_file($image_tmp_name, $image_folder);
-            $message[] = 'registered successfully!';
+            $message[] = 'Registered successfully!';
             header('location:login.php');
          }
       }
@@ -53,21 +53,22 @@ if(isset($_POST['submit'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Register</title>
 
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome CDN link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <!-- custom css file link  -->
+   <!-- Custom CSS file link -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <?php
+   // Display messages if any
    if(isset($message)){
-      foreach($message as $message){
+      foreach($message as $msg){
          echo '
          <div class="message">
-            <span>'.$message.'</span>
+            <span>'.$msg.'</span>
             <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
          </div>
          ';

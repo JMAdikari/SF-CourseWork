@@ -1,25 +1,29 @@
 <?php
 
-include 'config.php';
+// Include the config file
+include '../config.php';
 
+// Start the session
 session_start();
 
 $user_id = $_SESSION['user_id'];
 
+// Redirect to login page if the user is not logged in
 if(!isset($user_id)){
    header('location:login.php');
-};
+   exit(); // Always add exit() after header redirection
+}
 
 if(isset($_POST['update'])){
 
-   $username = $_POST['username'];
-   $username = filter_var($username, FILTER_SANITIZE_STRING);
-   $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
-   
-   $update_profile = $conn->prepare("UPDATE `user` SET username = ?, email = ? WHERE userID = ?");
-   $update_profile->execute([$username, $email, $user_id]);
+   // Sanitize input
+   $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+   $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 
+   // Update username and email in the database
+   $update_profile = mysqli_query($conn, "UPDATE `user` SET username = '$username', email = '$email' WHERE userID = '$user_id'") or die('query failed');
+
+   // Handle profile picture update
    $old_image = $_POST['old_image'];
    $image = $_FILES['image']['name'];
    $image_tmp_name = $_FILES['image']['tmp_name'];
@@ -30,39 +34,35 @@ if(isset($_POST['update'])){
 
       if($image_size > 2000000){
          $message[] = 'Image size is too large';
-      }else{
-         $update_image = $conn->prepare("UPDATE `user` SET image = ? WHERE userID = ?");
-         $update_image->execute([$image, $user_id]);
+      } else {
+         // Update image in the database
+         $update_image = mysqli_query($conn, "UPDATE `user` SET image = '$image' WHERE userID = '$user_id'") or die('query failed');
 
          if($update_image){
             move_uploaded_file($image_tmp_name, $image_folder);
-            unlink('uploaded_img/'.$old_image);
+            unlink('uploaded_img/'.$old_image); // Delete old image
             $message[] = 'Image has been updated!';
          }
       }
-
    }
 
+   // Handle password update
    $old_pass = $_POST['old_pass'];
-   $previous_pass = md5($_POST['previous_pass']);
-   $previous_pass = filter_var($previous_pass, FILTER_SANITIZE_STRING);
-   $new_pass = md5($_POST['new_pass']);
-   $new_pass = filter_var($new_pass, FILTER_SANITIZE_STRING);
-   $confirm_pass = md5($_POST['confirm_pass']);
-   $confirm_pass = filter_var($confirm_pass, FILTER_SANITIZE_STRING);
+   $previous_pass = md5(filter_var($_POST['previous_pass'], FILTER_SANITIZE_STRING));
+   $new_pass = md5(filter_var($_POST['new_pass'], FILTER_SANITIZE_STRING));
+   $confirm_pass = md5(filter_var($_POST['confirm_pass'], FILTER_SANITIZE_STRING));
 
    if(!empty($previous_pass) || !empty($new_pass) || !empty($confirm_pass)){
       if($previous_pass != $old_pass){
          $message[] = 'Old password does not match!';
-      }elseif($new_pass != $confirm_pass){
+      } elseif($new_pass != $confirm_pass){
          $message[] = 'New passwords do not match!';
-      }else{
-         $update_password = $conn->prepare("UPDATE `user` SET password = ? WHERE userID = ?");
-         $update_password->execute([$confirm_pass, $user_id]);
+      } else {
+         // Update password in the database
+         $update_password = mysqli_query($conn, "UPDATE `user` SET password = '$confirm_pass' WHERE userID = '$user_id'") or die('query failed');
          $message[] = 'Password has been updated!';
       }
    }
-
 }
 
 ?>
@@ -76,10 +76,10 @@ if(isset($_POST['update'])){
 
    <title>User Profile Update</title>
 
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome CDN link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <!-- custom css file link  -->
+   <!-- Custom CSS file link -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -103,13 +103,16 @@ if(isset($_POST['update'])){
 <section class="update-profile-container">
 
    <?php
-      $select_profile = $conn->prepare("SELECT * FROM `user` WHERE userID = ?");
-      $select_profile->execute([$user_id]);
-      $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+      // Fetch the user's profile from the database
+      $select_profile = mysqli_query($conn, "SELECT * FROM `user` WHERE userID = '$user_id'") or die('query failed');
+
+      if(mysqli_num_rows($select_profile) > 0){
+         $fetch_profile = mysqli_fetch_assoc($select_profile);
+      }
    ?>
 
    <form action="" method="post" enctype="multipart/form-data">
-      <img src="uploaded_img/<?= $fetch_profile['image']; ?>" alt="">
+      <img src="uploaded_img/<?= $fetch_profile['image']; ?>" alt="Profile Image">
       <div class="flex">
          <div class="inputBox">
             <span>Username : </span>
@@ -123,11 +126,11 @@ if(isset($_POST['update'])){
          <div class="inputBox">
             <input type="hidden" name="old_pass" value="<?= $fetch_profile['password']; ?>">
             <span>Old Password :</span>
-            <input type="password" class="box" name="previous_pass" placeholder="Enter previous password" >
+            <input type="password" class="box" name="previous_pass" placeholder="Enter previous password">
             <span>New Password :</span>
-            <input type="password" class="box" name="new_pass" placeholder="Enter new password" >
+            <input type="password" class="box" name="new_pass" placeholder="Enter new password">
             <span>Confirm Password :</span>
-            <input type="password" class="box" name="confirm_pass" placeholder="Confirm new password" >
+            <input type="password" class="box" name="confirm_pass" placeholder="Confirm new password">
          </div>
       </div>
       <div class="flex-btn">

@@ -1,6 +1,6 @@
 <?php
 
-@include 'config2.php';
+@include '../config.php';
 
 $id = $_GET['edit'];
 
