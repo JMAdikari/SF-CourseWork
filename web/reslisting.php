@@ -148,7 +148,7 @@
                   class="restaurant-img"
                 />
                 <div class="restaurant-name">Girl & The Goat </div>
-                <p><strong>Location:</strong>  Randolph St, <br> United States</p>
+                <p><strong>Location:</strong>  Randolph St <br> </p>
                 <p><strong>Cuisine:</strong>American</p>
                 <p>
                   <strong>Rating:</strong> <span class="star">★</span
@@ -187,7 +187,7 @@
                   class="restaurant-img"
                 />
                 <div class="restaurant-name">Great British </div>
-                <p><strong>Location:</strong> 36 James's St, London </p>
+                <p><strong>Location:</strong> 36 James's St  </p>
                 <p><strong>Cuisine:</strong>British </p>
                 <p>
                   <strong>Rating:</strong> <span class="star">★</span

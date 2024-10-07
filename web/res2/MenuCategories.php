@@ -462,18 +462,16 @@ if(isset($_POST['add_to_cart'])){
 </section>
 <!-- footer section ends -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/navbar_script.js"></script>
+<script src="js/script.js"></script>
 <script>
-    function showMessage(event, productName) {
-        event.preventDefault(); // Prevent form submission
-        const messageDiv = document.getElementById('cart-message');
-        messageDiv.textContent = `${productName} has been added to your cart!`;
-        messageDiv.style.display = 'block';
-        
-        // Optionally, reset the form after showing the message
-        setTimeout(() => {
-            messageDiv.style.display = 'none';
-        }, 3000); // Hide message after 3 seconds
-    }
+
+AOS.init({
+    duration:800,
+    delay:400
+});
 </script>
 
 </body>
