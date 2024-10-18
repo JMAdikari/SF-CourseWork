@@ -138,7 +138,7 @@
         <!-- Restaurants Sections -->
         <div class="w-full ml-5 mt-5 ">
           <section class="restaurant-section">
-            <div class="topic">Nearby Restaurants</div>
+            <div class="topic">Our Restaurants</div>
             <div class="restaurant-list">
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Italian Bistro">
@@ -186,7 +186,7 @@
                   alt="Sushi House"
                   class="restaurant-img"
                 />
-                <div class="restaurant-name">Great British </div>
+                <div class="restaurant-name">Season to Taste </div>
                 <p><strong>Location:</strong> 36 James's St  </p>
                 <p><strong>Cuisine:</strong>British </p>
                 <p>
@@ -195,9 +195,9 @@
                   ><span class="star">★</span><span class="star">★</span> (5/5)
                 </p>
                 <!-- View on Map Button -->
-                <button class="view-menu-btn" onclick="window.location.href='res2/MenuCategories.php'">View Restaturant</button>
+                <button class="view-menu-btn" onclick="window.location.href='res5.php'">View Restaturant</button>
                 <!-- View Menu Button -->
-                <button class="view-menu-btn" onclick="window.location.href='https://maps.google.com/?q=Taco+Fiesta+456+Nearby+Avenue'">View On Map</button>
+                <button class="view-menu-btn" onclick="window.location.href='https://www.google.com/maps/place/Season+to+Taste/@27.8715958,-140.4166867,3z/data=!4m10!1m2!2m1!1sgoogle+map+restaurants+in+america!3m6!1s0x89e3771c9bf96cfd:0x2ec177e934495ec5!8m2!3d42.3823964!4d-71.1199941!15sCiFnb29nbGUgbWFwIHJlc3RhdXJhbnRzIGluIGFtZXJpY2EiA4gBAVoYIhZyZXN0YXVyYW50cyBpbiBhbWVyaWNhkgEKcmVzdGF1cmFudOABAA!16s%2Fg%2F1wv_t6qs?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D'">View On Map</button>
               </div>
               
               <!-- Restaurant 3 -->
@@ -216,7 +216,7 @@
                   ><span class="star">★</span><span class="star">☆</span> (4.5/5)
                 </p>
                 <!-- View on Map Button -->
-                <button class="view-menu-btn" onclick="window.location.href='resturant1.php'">View Restaturant</button>
+                <button class="view-menu-btn" onclick="window.location.href='res2/MenuCategories.php'">View Restaturant</button>
                 <!-- View Menu Button -->
                 <button class="view-menu-btn" onclick="window.location.href='https://maps.app.goo.gl/2TpNzp4FNkrzaCn79'">View On Map</button>
               </div>

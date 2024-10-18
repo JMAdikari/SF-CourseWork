@@ -104,6 +104,7 @@ if(isset($_GET['delete_all'])){
 <section class="shopping-cart">
 
    <h1 class="heading">shopping cart</h1>
+   <h3> *Service charge will be added to all food items</h3>
 
    <table>
 

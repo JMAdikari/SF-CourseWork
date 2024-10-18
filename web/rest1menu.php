@@ -141,48 +141,48 @@
 <section class="dishes" id="dishes">
 
 
-    <h2 class="heading">popular dishes</h2>
+    <h2 class="heading">popular Menu Categories</h2>
 
     <div class="menu-container">
         <div class="menu-card">
             <img src="images/resmenuimg/pop1.jpg" alt="Dish 1" class="menu-image">
             <div class="menu-content">
-                <h2 class="menu-title">Bacon BBQ Burger</h2>
-                <p class="menu-description">Savor a juicy beef patty topped with crispy bacon, rich BBQ sauce, fresh lettuce, and ripe tomatoes on a toasted brioche bun.</p>
-                <p class="menu-price">40$</p>
+                <h2 class="menu-title"> Burgers: Savor the Flavor!</h2>
+                <p class="menu-description">"Our Burgers is a mouth-watering delight, featuring a juicy, perfectly seasoned beef patty grilled to perfection. It's topped with melted cheddar cheese, crisp lettuce, fresh tomatoes, tangy pickles, and a dollop of creamy mayo, all sandwiched between a toasted sesame seed bun. Every bite is packed with flavor, making it the ultimate comfort food!"</p>
+                <p class="menu-price">20$ - 40$</p>
                 <div class="menu-rating">★★★★☆</div>
                 <a href="resturant4.php" class="btn">Order Now</a>
             </div>
         </div>
         <div class="menu-card">
-            <img src="images/resmenuimg/nm1.jpg" alt="Dish 2" class="menu-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXSH5sF5LdtmDfNxiht4k2WWrOr7Ykr5ewkQ&s" alt="Dish 2" class="menu-image">
             <div class="menu-content">
-                <h2 class="menu-title">Cheesy Shrimp Spaghetti Delight</h2>
-                <p class="menu-description">Indulge in al dente spaghetti tossed with succulent prawns, creamy cheese sauce, and a hint of garlic, topped with fresh herbs for a delicious finish.</p>
-                <p class="menu-price">30$</p>
+                <h2 class="menu-title"> Pizza: A Slice of Happiness!</h2>
+                <p class="menu-description">Dive into our delicious selection of pizzas, where every slice is a masterpiece crafted with love. Our pizzas feature a perfectly baked crust, hand-tossed to achieve the ideal balance of crispy and chewy. Topped with a rich, savory tomato sauce, our signature blend of mozzarella cheese, and an array of fresh, high-quality ingredients, each pizza is a celebration of flavor.</p>
+                <p class="menu-price">30$ - 45$</p>
                 <div class="menu-rating">★★★★☆</div>
-                <a href="resturant1.php" class="btn">Order Now</a>
+                <a href="res5.php" class="btn">Order Now</a>
         
             </div>
         </div>
         <div class="menu-card">
-            <img src="images/resmenuimg/pop4.jpg" alt="Dish 3" class="menu-image">
+            <img src="https://images.rodpub.com/images/102/819_main.jpg" alt="Dish 3" class="menu-image">
             <div class="menu-content">
-                <h2 class="menu-title">Spiced Meatball Fried Rice</h2>
-                <p class="menu-description">Enjoy a flavorful blend of tender meatballs and seasoned fried rice, tossed with fresh vegetables and a hint of spices for a delightful, satisfying meal.</p>
-                <p class="menu-price">30$</p>
+                <h2 class="menu-title">Beverages: Refreshing Delights!</h2>
+                <p class="menu-description">Quench your thirst with our exquisite selection of beverages . we offer something for everyone. Indulge in our handcrafted smoothies, bursting with fresh fruits and nutrients, or try our signature shakes, creamy and decadent for a sweet treat. For those looking for something more unique, explore our selection of artisanal juices and flavored lemonades</p>
+                <p class="menu-price">10$ - 35$</p>
                 <div class="menu-rating">★★★★★</div>
-                <a href="res2/MenuCategories.php" class="btn">Order Now</a>
+                <a href="resturant4.php" class="btn">Order Now</a>
             </div>
         </div>
         <div class="menu-card">
-            <img src="images/resmenuimg/pop3.jpg" alt="Dish 4" class="menu-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaWOLW5xDoR6Xd2HxLskZ_BqYhoMFqjxgnMA&s" alt="Dish 4" class="menu-image">
             <div class="menu-content">
-                <h2 class="menu-title">Molten Chocolate Lava Cake</h2>
-                <p class="menu-description">Delight in this rich chocolate cake with a gooey, molten center. Served warm, it’s a decadent treat that flows with chocolatey goodness, perfect for any chocolate lover!</p>
-                <p class="menu-price">20$</p>
+                <h2 class="menu-title">PAppetizers: A Culinary Journey!</h2>
+                <p class="menu-description">Kick off your meal with our mouthwatering selection of appetizers. Designed to tease your palate and prepare you for the main course, our appetizers offer a mix of crispy, savory, and flavorful small bites. Whether you're craving something light and fresh, our appetizers feature a variety of options to suit every taste.  each dish is crafted to perfection and served with signature dipping sauces.</p>
+                <p class="menu-price">20$ - 35$</p>
                 <div class="menu-rating">★★★★★</div>
-                <a href="resturant1.php" class="btn">Order Now</a>
+                <a href="res5.php" class="btn">Order Now</a>
             </div>
         </div>
     </div>

@@ -17,6 +17,7 @@ if(isset($_POST['order_btn'])){
 
    $cart_query = mysqli_query($conn, "SELECT * FROM `cart`");
    $price_total = 0;
+   $delivery_charge = 20; // Changed the delivery charge to 20
    if(mysqli_num_rows($cart_query) > 0){
       while($product_item = mysqli_fetch_assoc($cart_query)){
          $product_name[] = $product_item['name'] .' ('. $product_item['quantity'] .') ';
@@ -25,7 +26,10 @@ if(isset($_POST['order_btn'])){
       };
    };
 
-   $total_product = implode(', ',$product_name);
+   $price_total += $delivery_charge; // Add delivery charge to the total price
+   $total_product = implode(', ', $product_name);
+   
+   // Insert into the database with updated price_total
    $detail_query = mysqli_query($conn, "INSERT INTO `order`(name, number, email, method, flat, street, city, state, country, pin_code, total_products, total_price) VALUES('$name','$number','$email','$method','$flat','$street','$city','$state','$country','$pin_code','$total_product','$price_total')") or die('query failed');
 
    if($cart_query && $detail_query){
@@ -35,7 +39,7 @@ if(isset($_POST['order_btn'])){
          <h3>thank you for shopping!</h3>
          <div class='order-detail'>
             <span>".$total_product."</span>
-            <span class='total'> total : $".$price_total."/-  </span>
+            <span class='total'> total : $".$price_total."/-  (Including delivery charge of $20) </span> <!-- Display total with delivery charge -->
          </div>
          <div class='customer-details'>
             <p> your name : <span>".$name."</span> </p>
@@ -52,6 +56,8 @@ if(isset($_POST['order_btn'])){
    }
 
 }
+
+
 
 ?>
 
