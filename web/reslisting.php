@@ -450,7 +450,7 @@
               <!-- Restaurant 1 -->
               <div class="restaurant-card" data-name="Italian Bistro">
                 <img
-                  src="images/assets/italian1.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEBshLyGuagLYSODPk90vCZf71uNTJTbD5A&s"
                   alt="Italian Bistro"
                   class="restaurant-img"
                 />

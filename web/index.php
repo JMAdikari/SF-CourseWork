@@ -114,87 +114,87 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="https://cdn.tasteatlas.com/images/dishes/b05a0af72ad845f3a6abe16143d7853a.jpg?mw=2000" alt="">
+                <img src="https://www.simplyrecipes.com/thmb/rLl58QZmVP4C3zSlpkKBo72EUws=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg" alt="">
                 <h3> <i class="fas fa-utensils"></i> Pizza </h3>
             </div>
             <div class="content">
-                <div class="price"> 70$ <span>60$</span> </div>
+                <div class="price"> 13.99$ <span>15.99$</span> </div>
                 <p>A classic Italian pizza with a crispy thin crust, topped with fresh mozzarella cheese, ripe tomatoes, and fragrant basil, drizzled with olive oil for the perfect blend of flavors.</p>
-                <a href="resturant1.php" class="btn"> Order now</a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="https://www.certifiedirishangus.ie/wp-content/uploads/2019/11/TheUltimateBurgerwBacon_RecipePic-1200x675.jpg" alt="">
-                <h3> <i class="fas fa-utensils"></i>  Classic Beef Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 80$ <span>70$</span> </div>
-                <p>  A juicy beef patty grilled to perfection, topped with fresh lettuce, ripe tomatoes, onions, and a slice of melted cheese, all nestled in a toasted sesame seed bun. Served with a side of crispy fries and ketchup.</p>
-                <a href="res2/MenuCategories.php" class="btn"> Order now</a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="https://www.wikihow.com/images/e/e0/Make-a-Healthy-Salad-that-Tastes-Good-Intro.jpg" alt="">
-                <h3> <i class="fas fa-utensils"></i> Garden Fresh Salad </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 50$<span>45$</span> </div>
-                <p> A vibrant mix of crisp lettuce, cucumbers, cherry tomatoes, and crunchy croutons, tossed in a light vinaigrette. Topped with shredded carrots and a sprinkle of Parmesan cheese for a refreshing, healthy option.</p>
                 <a href="resturant4.php" class="btn"> Order now</a>
             </div>
         </div>
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/riceandcurry.jpg" alt="">
-                <h3> <i class="fas fa-utensils"></i> Rice and Curry </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9Qq1rV_svdydH5u3O8r5ZmT8udMBnSuKeA&s" alt="">
+                <h3> <i class="fas fa-utensils"></i>  Classic Cheese Burger </h3>
             </div>
             <div class="content">
-                <div class="price"> 65$ <span>60$</span> </div>
-                <p> Aromatic basmati rice served with tender chicken cooked in a rich, flavorful curry sauce made with a blend of traditional spices, coconut milk, and herbs. Accompanied by a side of pickles and papadam.</p>
-                <a href="res2/MenuCategories.php" class="btn"> Order now</a>
+                <div class="price"> 8.99$ <span>10.99$</span> </div>
+                <p>  A juicy beef patty grilled to perfection, topped with fresh lettuce, ripe tomatoes, onions, and a slice of melted cheese, all nestled in a toasted sesame seed bun. Served with a side of crispy fries and ketchup.</p>
+                <a href="resturant4.php" class="btn"> Order now</a>
             </div>
         </div>
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/iced.jpg" alt="">
+                <img src="https://www.eatingwell.com/thmb/S2NGMEcgm11dtdBJ6Hwprwq-nVk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eat-the-rainbow-chopped-salad-with-basil-mozzarella-beauty-185-278133-4000x2700-56879ac756cd46ea97944768847b7ea5.jpg" alt="">
+                <h3> <i class="fas fa-utensils"></i>Rainbow Chopped Salad with Basil & Mozzarella </h3>
+            </div>
+            <div class="content">
+                <div class="price"> 9.99$<span>11.99$</span> </div>
+                <p> A vibrant mix of crisp lettuce, cucumbers, cherry tomatoes, and crunchy croutons, tossed in a light vinaigrette. Topped with shredded carrots and a sprinkle of Parmesan cheese for a refreshing, healthy option.</p>
+                <a href="res5.php" class="btn"> Order now</a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzR3rsBZ5AMw68FUv3iS1F_YmxoEmw3BnKA&s" alt="">
+                <h3> <i class="fas fa-utensils"></i> Spicy Seafood Fried Rice </h3>
+            </div>
+            <div class="content">
+                <div class="price"> 11.99$ <span>14.99$</span> </div>
+                <p> Aromatic basmati rice served with tender chicken cooked in a rich, flavorful curry sauce made with a blend of traditional spices, coconut milk, and herbs. Accompanied by a side of pickles and papadam.</p>
+                <a href="res5.php" class="btn"> Order now</a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzixmJm1j6aLFZpncyOjQHSS3vI1BSrFLaow&s" alt="">
                 <h3> <i class="fas fa-utensils"></i>  Iced Lemonade </h3>
             </div>
             <div class="content">
-                <div class="price"> 30$ <span>20$</span> </div>
+                <div class="price"> 5$ <span>7$</span> </div>
                 <p>  A refreshing drink made with freshly squeezed lemons, ice, and a touch of sweetness. Perfect for quenching your thirst on a hot day, served ice-cold with a slice of lemon.</p>
-                <a href="res2/MenuCategories.php" class="btn"> Order now</a>
+                <a href="res5.php" class="btn"> Order now</a>
             </div>
         </div>
 
         
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/sushi.jpg" alt="">
-                <h3> <i class="fas fa-utensils"></i>   Sushi Roll Platter </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzexmBmxtCQPAeLOvgjb3yNMwxIBGnxV85w&s" alt="">
+                <h3> <i class="fas fa-utensils"></i>  Ham & Cheese Puff Pastry </h3>
             </div>
             <div class="content">
-                <div class="price"> 30$ <span>20$</span> </div>
-                <p>  A variety of sushi rolls including fresh tuna, salmon, and avocado rolls, paired with pickled ginger, wasabi, and soy sauce. A perfect choice for sushi lovers looking for a fresh and light meal.</p>
-                <a href="resturant1.php" class="btn"> Order now</a>
+                <div class="price"> 9.99$ <span>11.99$</span> </div>
+                <p> Ham and Cheese appetizers are sure to be a hit. A perfect choice for food lovers looking for a fresh and light meal.</p>
+                <a href="res5.php" class="btn"> Order now</a>
             </div>
         </div>
 
         
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-6.jpg" alt="">
-                <h3> <i class="fas fa-utensils"></i>  BBQ </h3>
+                <img src="https://www.epicuricloud.com/wp-content/uploads/2020/02/Homemade-Pizza-Crust-Sauce-close-up-front-scaled.jpg" alt="">
+                <h3> <i class="fas fa-utensils"></i> BBQ Pizza</h3>
             </div>
             <div class="content">
-                <div class="price"> 35$ <span>30$</span> </div>
+                <div class="price"> 13.99$ <span>15.99$</span> </div>
                 <p>  Succulent chicken wings marinated in a smoky BBQ sauce, grilled to perfection for a sticky, flavorful bite. Served with a side of coleslaw and dipping sauce for the ultimate BBQ experience.</p>
-                <a href="rest1menu.php" class="btn"> Order now</a>
+                <a href="resturant4.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -202,13 +202,13 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/butter.jpg" alt="">
-                <h3> <i class="fas fa-utensils"></i>   Butter Chicken </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8u5NZ6tERitPKsmJHd0690iSJY4Hg671zivut2wH93rZJ5hx8QcEedeZTpeFbtvwbsI&usqp=CAU" alt="">
+                <h3> <i class="fas fa-utensils"></i>  Seafood Pizza </h3>
             </div>
             <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
+                <div class="price"> 12.99$<span>16.99$</span> </div>
                 <p>  A creamy and mildly spiced curry made with marinated chicken simmered in a rich tomato and butter sauce. Served with fluffy basmati rice or warm naan bread.</p>
-                <a href="resturant4.php" class="btn"> Order now</a>
+                <a href="res5.php" class="btn"> Order now</a>
             </div>
         </div>
 
@@ -224,22 +224,22 @@
     <h2 style="font-size: 36px; margin-bottom: 20px;">Popular Meals</h2>
     <div style="display: flex; justify-content: space-around;">
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
-            <img src="https://www.pepperdelight.com/wp-content/uploads/2016/01/ChickenPasta1.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-            <h3 style="margin: 10px 0;">Chicken Pasta with White Sauce</h3>
-            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$12.99</p>
-            <a href="resturant1.php" class="btn"> Order now</a>
+            <img src="https://www.sprinklesandsprouts.com/wp-content/uploads/2023/09/Garlic-Parmesan-Chicken-Pasta-Sq.jpg" alt="Grilled Chicken" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            <h3 style="margin: 10px 0;">Chicken Cheese Pasta with White Sauce</h3>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$10.99</p>
+            <a href="resturant4.php" class="btn"> Order now</a>
         </div>
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
             <img src="https://img.lovepik.com/photo/50077/4812.jpg_wh860.jpg" alt="Veggie Delight" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
             <h3 style="margin: 10px 0;">Seafood Pizza</h3>
-            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$10.99</p>
-            <a href="resturant4.php" class="btn"> Order now</a>
+            <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$12.99</p>
+            <a href="res5.php" class="btn"> Order now</a>
         </div>
         <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 30%; text-align: center;">
             <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Grilled-Chicken-Sandwich-750x750.jpg" alt="Steak Sandwich" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
             <h3 style="margin: 10px 0;">Grilled Chicken Sandwich</h3>
             <p style="font-size: 18px; font-weight: bold; color: #ab6806;">$14.99</p>
-            <a href="res2/MenuCategories.php" class="btn"> Order now</a>
+            <a href="resturant4.php" class="btn"> Order now</a>
         </div>
     </div>
 </section>

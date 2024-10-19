@@ -1,7 +1,7 @@
 
 <?php
 
-@include 'config.php';
+@include '../config.php';
 
 if(isset($_POST['add_to_cart'])){
 

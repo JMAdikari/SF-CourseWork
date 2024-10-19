@@ -97,7 +97,7 @@ if(isset($_POST['add_to_cart'])){
 
 
 <div class="image" data-aos="fade-down">
-        <img src = "images/res5.jpg" alt="">
+        <img src = "res5.jpg" alt="">
         <div class="restaurant-name">Season to Taste</div>
     </div>
     <br>
@@ -386,18 +386,53 @@ if(isset($_POST['add_to_cart'])){
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
+       
+
+
+            <br>
+    <br>
+    <h1>Salads</h1>
+    
+    
+    <div class="menu-category" id="pizza">
+    <div class="category">
         <div class="menu-item">
             <form action="" method="post">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLL88pSzxwhSUB-z99jOW__wXWtKP3WXZ5ow&s" alt="Devilled Chicken Pizza">
-                <h3>Puff Pastry Asparagus</h3>
-                <p>puff pastry asparagus appetizer is a delicious vegan snack </p>
-                <div class="price">$6.99</div>
-                <input type="hidden" name="product_name" value="Puff Pastry Asparagus">
-                <input type="hidden" name="product_price" value="6.99">
-                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLL88pSzxwhSUB-z99jOW__wXWtKP3WXZ5ow&s">
+                <img src="https://www.eatingwell.com/thmb/S2NGMEcgm11dtdBJ6Hwprwq-nVk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eat-the-rainbow-chopped-salad-with-basil-mozzarella-beauty-185-278133-4000x2700-56879ac756cd46ea97944768847b7ea5.jpg" alt="Seafood Pizza">
+                <h3>Rainbow Chopped Salad with Basil & Mozzarella</h3>
+                <p> This chopped salad has all the flavors of caprese salad, plus even more healthy veggies!                </p>
+                <div class="price">$9.99</div>
+                <input type="hidden" name="product_name" value="Rainbow Chopped Salad with Basil & Mozzarella">
+                <input type="hidden" name="product_price" value="9.99">
+                <input type="hidden" name="product_image" value="https://www.eatingwell.com/thmb/S2NGMEcgm11dtdBJ6Hwprwq-nVk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eat-the-rainbow-chopped-salad-with-basil-mozzarella-beauty-185-278133-4000x2700-56879ac756cd46ea97944768847b7ea5.jpg">
                 <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
             </form>
         </div>
+        <div class="menu-item">
+            <form action="" method="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXa8e2SIrEbibqrTdfa4qB9qoe0kK_l0v2cw&s" alt="Double Chicken & Cheese Pizza">
+                <h3>Waldorf Salad</h3>
+                <p>Crunchy, creamy, sweet and sour, this classic salad has only slightly evolved from the original ...</p>
+                <div class="price">$7.99</div>
+                <input type="hidden" name="product_name" value="Easy Layered Cheese">
+                <input type="hidden" name="product_price" value="7.99">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXa8e2SIrEbibqrTdfa4qB9qoe0kK_l0v2cw&s">
+                <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
+            </form>
+        </div>
+        <div class="menu-item">
+            <form action="" method="post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa1A0SJBXXXNTUh_vpH75GzztrlWtdw7ujfl-RzSDY5AUh33nAAMtguVouq5O9mCvjPCE&usqp=CAU" alt="BBQ Pizza">
+                <h3>Chicken Cobb Salad </h3>
+                <p>delicious chicken Cobb salad with a simple homemade ...</p>
+                <div class="price">$13.99</div>
+                <input type="hidden" name="product_name" value="Karen's Skewered Shrimp Scampi ">
+                <input type="hidden" name="product_price" value="13.99">
+                <input type="hidden" name="product_image" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa1A0SJBXXXNTUh_vpH75GzztrlWtdw7ujfl-RzSDY5AUh33nAAMtguVouq5O9mCvjPCE&usqp=CAU">
+                <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
+            </form>
+        </div>
+       
         
 
         
