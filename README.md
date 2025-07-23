@@ -43,7 +43,7 @@ User Profile  Page
 
 Admin Profile  Page
 
-<p align="center"> <img src="Assests/adminprofile1.png" alt="profile" width="600" height="750"/> </p>
+<p align="center"> <img src="Assests/adminprofile.png" alt="profile" width="600" height="750"/> </p>
 <p align="center"> <img src="Assests/adminprofile2.png" alt="profile" width="600" height="750"/> </p>
 <p align="center"> <img src="Assests/adminprofile3.png" alt="profile" width="600" height="750"/> </p>
 
