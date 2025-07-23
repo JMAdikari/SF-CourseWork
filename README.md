@@ -10,9 +10,9 @@ Home Page
 
 <p align="center"> <img src="Assests/home1.png" alt="Home Page" width="600" height="400"/> </p>
 <p align="center"> <img src="Assests/home2.png" alt="Home Page" width="600" height="400"/> </p>
-<p align="center"> <img src="Assests/home3.png" alt="Home Page" width="600" height="400"/> </p>
-<p align="center"> <img src="Assests/home4.png" alt="Home Page" width="600" height="400"/> </p>
-<p align="center"> <img src="Assests/home5.png" alt="Home Page" width="600" height="400"/> </p>
+<p align="center"> <img src="Assests/home 3.png" alt="Home Page" width="600" height="400"/> </p>
+<p align="center"> <img src="Assests/home 4.png" alt="Home Page" width="600" height="400"/> </p>
+<p align="center"> <img src="Assests/home 5.png" alt="Home Page" width="600" height="400"/> </p>
 
 Register Page
 <p align="center"> <img src="Assests/register.png" alt="register" width="600" height="400"/> </p>
